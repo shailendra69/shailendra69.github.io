@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Poppins:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,100&family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.profile-cover {
+    display: flex;
+    height: 60px;
+    background-color:red;
+    margin: 0;
+    padding: 5px;
+    justify-content: space-between;
+   /* text-align: right; */
+}
+.profile img {
+    margin:0;
+    height: 60px;
+    
+}
+
+.nav a{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    text-decoration: none;
+    margin-right: 0px;
+    display: block;
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+    background-color: skyblue;
+}
+
+nav a:hover {
+    background-color: skyblue;
+}
+
+
+.Flex-Hero-Header {
+    display: flex;
+    height: 500px;
+    margin-top: 0;
+    background-color: rgb(41, 41, 41);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.Flex-Hero-Header div {
+    text-align: center;
+}
+
+.Flex-Hero-Header .greet {
+    font-family: 'lato', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.Flex-Hero-Header .tagline {
+    font-family: 'poppins', sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: tomato;
+}
+
+.photos-title {
+    display: flex;
+    justify-content: center;
+    background-color: #627194;
+}
+
+.photos-title h4 {
+    font-size: 40px;
+    color:white;
+    padding: 10px;
+    font-family: cursive;
+    font-style: italic;
+    text-decoration-line: underline;
+    text-align: center;
+    text-decoration: bold;
+    margin: 0%;
+
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #627194;
+    height: 1000px;
+    
+}
+.gallery section {
+    align-content: center;
+}
+.gallery table {
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px;  
+}
+
+.gallery table tr{
+    cellpadding: 20px;
+    align-items: center;
+}
+
+.gallery table td{
+    width: 33%;
+    margin:50px;
+    padding: 50px;
+    align-items: center;
+}
+
+.gallery img {
+    
+    width: 300px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.image-caption p{
+    margin: 0px;
+    width: 50px;
+    height: 30px;
+    background-color: black;
+    
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    text-decoration: bold;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    .show1 {
+        color: black;
+    }
+}
+
+ .show1{
+    
+    color: black;
+    transition: color .5s ease-in-out;
+
+}
+.image-caption p:hover .show1{
+    
+        color: brown;
+    
+}
+
+.next {
+    display: flex;
+    justify-content: center;
+    background-color: #627194;
+}
+
+.next a {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 20px;
+    
+    font-weight: bold;
+    width: 150px;
+}
+.next a:hover {
+    background-color: red;
+}
+.next a:hover .next1{
+    background-color: red;
+    word-spacing: 7px;
+    transition: word-spacing 0.5s ease-in-out;
+}
+
+.Flex-contact {
+    display: flex;
+    height: 300px;
+    margin: 0;
+    background-color: rgb(41, 41, 41);
+    
+    justify-content: center;
+    align-items: center;
+}
+.Flex-contact div {
+    text-align: center;
+}
+
+.Flex-contact .contact-greet {
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.Flex-contact .contact-tagline {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    word-spacing: 2px;
+    color: white;
+    padding-bottom: 80px;
+    margin-bottom: 100px;
+}
+
+.Flex-contact .social-media {
+    display: flex;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.Flex-contact table {
+    margin-top: 40px;
+}
+
+.Flex-contact table td{
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+    align-items: center;    
+}
+
+.facebook a{
+    color: white;
+    text-decoration: none;
+}
+
+.facebook{
+    padding: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+    
+}
+
+.facebook:hover{
+    color: white;
+    transition: padding .5s ease-in-out;
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+
+.github{
+    padding: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+    
+}
+
+.github:hover{
+    color: white;
+    transition: padding .5s ease-in-out;
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+
+.twitter{
+    padding: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+    
+}
+
+.twitter:hover{
+    color: white;
+    transition: padding .5s ease-in-out;
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+
+.email {
+    padding: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+    
+}
+
+.email:hover{
+    color: white;
+    transition: padding .5s ease-in-out;
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+
+.call{
+    padding: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+    
+}
+
+.call:hover{
+    color: white;
+    transition: padding .5s ease-in-out;
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+
+.Flex-contact .social-media img {
+    height: 20px;
+}
+
+.Flex-contact hr{
+
+}
+
+
+.copyright {
+    display: flex;
+    height: 100px;
+    margin: 0;
+    background-color: rgb(41, 41, 41);
+    justify-content: space-evenly;
+    
+}    
+    
+.hr {
+    display: inline;
+    background-color: rgb(41, 41, 41);
+    margin: 0;
+    padding: 0;
+}   
+
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 2px solid red;
+    
+}
+
+.copyright .bottomline {
+    margin-top: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    color: white;
+     align: center;
+}
+
+.footer {
+  text-align: bottom;
+  margin-top: 100px;
+}
+
+#contact-section {
+height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom left,#1a1a1a #333333);
+  margin-bottom: 40px; 
+  transition: background 1s ease,padding 4s ease;
+  cursor: pointer;
+ 
+}
+
+
+
+

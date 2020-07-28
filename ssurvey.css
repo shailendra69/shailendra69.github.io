@@ -1,0 +1,153 @@
+body{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #fcf7b8;
+    margin:0 auto;
+    width:85%;
+    min-width:300px;
+    /* border: solid 1px; */
+}
+#title{
+    text-align: center;
+}
+#survey-form{
+    background-color:#edebe6;
+    padding:20px;
+    margin:0 auto;
+    width:50%;
+    border-radius:5px;
+
+}
+#description{
+    text-align: center;
+}
+#submit{
+    margin: 10px auto;
+    background-color: #fcf7b8;
+    color: #000000;
+    text-align: center;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap:10px;
+}
+/*input[type="text"], input[type="email"], input[type="number"]{
+    
+}*/
+.left{
+    text-align:right;
+}
+
+.textbox{
+    max-width: 400px;
+    height: 20px;
+}
+.combobox{
+    max-width:200px;
+    height: 25px;
+}
+
+@media (max-width: 700px){
+    .textbox{
+        max-width: 230px;
+        height: 20px;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        text-align:left;
+    }
+    #survey-form{
+        width:60%;
+    }
+}
+textarea{
+    max-width: 400px;
+    height:50px;
+}
+
+.button-centered{
+    margin: 0 auto;
+    text-align: center;
+} body{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #fcf7b8;
+    margin:0 auto;
+    width:85%;
+    min-width:300px;
+    /* border: solid 1px; */
+}
+#title{
+    text-align: center;
+}
+#survey-form{
+    background-color:#edebe6;
+    padding:20px;
+    margin:0 auto;
+    width:50%;
+    border-radius:5px;
+
+}
+#description{
+    text-align: center;
+}
+#submit{
+    margin: 10px auto;
+    background-color: #fcf7b8;
+    color: #000000;
+    text-align: center;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap:10px;
+}
+/*input[type="text"], input[type="email"], input[type="number"]{
+    
+}*/
+.left{
+    text-align:right;
+}
+
+.textbox{
+    max-width: 400px;
+    height: 20px;
+}
+.combobox{
+    max-width:200px;
+    height: 25px;
+}
+
+@media (max-width: 700px){
+    .textbox{
+        max-width: 230px;
+        height: 20px;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        text-align:left;
+    }
+    #survey-form{
+        width:60%;
+    }
+}
+textarea{
+    max-width: 400px;
+    height:50px;
+}
+
+.button-centered{
+    margin: 0 auto;
+    text-align: center;
+} 
