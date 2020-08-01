@@ -5,321 +5,339 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'poppins','sans-serif';
 }
 
-.profile-cover {
+.flex-container
+{
+  
+    background-color: red;
+    height: 60px;
+    
     display: flex;
-    height: 60px;
-    background-color:red;
-    margin: 0;
-    padding: 5px;
     justify-content: space-between;
-   /* text-align: right; */
-}
-.profile img {
-    margin:0;
-    height: 60px;
+    
     
 }
 
-.nav a{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-    text-decoration: none;
-    margin-right: 0px;
-    display: block;
-    float: left;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 24px;
-    padding-right: 24px;
-    text-align: center;
-    background-color: skyblue;
-}
+  nav a
+  {
+     color: antiquewhite;
+     font-size: 25px;
+     text-decoration: none;
+     
+     display: block;
+     height: 60%;
+     float: left;
+     padding-top: 20px;
+     padding-right: 20px;
+     padding-left: 20px;
+     padding-bottom: 12px;
+     font-family: sans-serif;
+  }
 
-nav a:hover {
-    background-color: skyblue;
-}
+  nav a:hover
+  {
+      background-color:#00223e ;
+      display: flex;
 
+  }
 
-.Flex-Hero-Header {
+  .flexhero-header
+  {
+    height: 700px;
     display: flex;
-    height: 500px;
-    margin-top: 0;
-    background-color: rgb(41, 41, 41);
     justify-content: center;
     align-items: center;
+    background-color: #303841;
     text-align: center;
-}
-.Flex-Hero-Header div {
-    text-align: center;
-}
+  }
 
-.Flex-Hero-Header .greet {
-    font-family: 'lato', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-}
+  .flexhero-header div
+  {
+      border:1px black;
+  }
 
-.Flex-Hero-Header .tagline {
-    font-family: 'poppins', sans-serif;
-    font-size: 22px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: tomato;
-}
+  .flexhero-header h1 {
+      font-family:'Poppins', sans-serif;
+      color: white;
+      font-size: 50px;
+      margin: 0px;
+  }
 
-.photos-title {
-    display: flex;
-    justify-content: center;
-    background-color: #627194;
-}
+  .flexhero-header .tagline 
+  {
+    font-family: 'Poppins', sans-serif;
+    color: red;
+    font-size: 40px;
+    
+  }
 
-.photos-title h4 {
+  
+  .photos-title{
     font-size: 40px;
     color:white;
-    padding: 10px;
-    font-family: cursive;
-    font-style: italic;
     text-decoration-line: underline;
-    text-align: center;
     text-decoration: bold;
-    margin: 0%;
-
+    text-align: center;
+    background-color:#627194;  
+    height: 80px; 
+    padding-top: 10px;
 }
 
-.gallery {
+ .photos {
+     background-color:#627194;     
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: #627194;
-    height: 1000px;
-    
-}
-.gallery section {
-    align-content: center;
-}
-.gallery table {
-    align-self: center;
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
     align-items: center;
+    
+  }
+
+.photos div {
+  background-color: #f1f1f1;  
+
+  margin: 50px;
+  text-align: center;  
+  font-size: 30px;
+   
+}
+
+.photos .group{
     width: 100%;
-    margin: 50px;  
 }
-
-.gallery table tr{
-    cellpadding: 20px;
-    align-items: center;
-}
-
-.gallery table td{
-    width: 33%;
-    margin:50px;
-    padding: 50px;
-    align-items: center;
-}
-
-.gallery img {
-    
-    width: 300px;
+  
+  .photos img{
+    width: 350px;
     margin-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 0px;
+  }
+.image3 {
+    background-color: #627194;
+    padding-left: 280px;
 }
 
 .image-caption p{
-    margin: 0px;
-    width: 50px;
-    height: 30px;
-    background-color: black;
-    
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px;
-    text-decoration: bold;
-    color: white;
-    text-align: center;
-    padding-top: 10px;
-    .show1 {
-        color: black;
-    }
+  margin: 0px;
+ 
+  width: 350px;
+  height: 45px;
+  background-color: black;
+  
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  text-decoration: bold;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  
+  .show1 {
+      color: black;
+  }
 }
 
- .show1{
-    
-    color: black;
-    transition: color .5s ease-in-out;
+.show1{
+  
+  color: black;
+  transition: color .5s ease-in-out;
 
 }
 .image-caption p:hover .show1{
-    
-        color: brown;
-    
+  
+      color: brown;
+  
 }
 
-.next {
-    display: flex;
-    justify-content: center;
-    background-color: #627194;
+.shownext {
+  display: flex;
+  justify-content: center;
+  background-color: #627194;
 }
 
-.next a {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    margin-top: 40px;
-    margin-bottom: 80px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px;
-    text-decoration: none;
-    border-radius: 20px;
-    
-    font-weight: bold;
-    width: 150px;
+.shownext a {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  border-radius: 4px;  
+  font-weight: bold;
+  
+  /*width: 150px;*/
 }
-.next a:hover {
-    background-color: red;
+.shownext a:hover {
+  background-color: red;
+  
 }
-.next a:hover .next1{
-    background-color: red;
-    word-spacing: 7px;
-    transition: word-spacing 0.5s ease-in-out;
+.shownext a:hover .next1{
+  background-color: red;
+  word-spacing: 7px;
+  transition: word-spacing 0.5s ease-in-out;
+  
 }
 
 .Flex-contact {
-    display: flex;
-    height: 300px;
-    margin: 0;
-    background-color: rgb(41, 41, 41);
-    
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  height: 300px;
+  margin: 0;
+  background-color: rgb(41, 41, 41);
+  justify-content: space-around;
+  
 }
 .Flex-contact div {
-    text-align: center;
+  text-align: center;
+
 }
 
-.Flex-contact .contact-greet {
-    margin-top: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
+.contact-greet {
+  margin-top: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  background-color: rgb(41, 41, 41);
+  justify-content: center;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-.Flex-contact .contact-tagline {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    font-style: italic;
-    word-spacing: 2px;
-    color: white;
-    padding-bottom: 80px;
-    margin-bottom: 100px;
+.Flex-Contact .contact-tagline {
+  width: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  word-spacing: 2px;
+  color: white;
+  background-color: rgb(41, 41, 41);
+  /*padding-bottom: 80px;
+  margin-bottom: 100px; */
 }
 
 .Flex-contact .social-media {
-    display: flex;
-    width: 100%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
-    color: white;
+  display: flex;
+  height: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  color: white;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(41, 41, 41);
 }
-
+/*
 .Flex-contact table {
-    margin-top: 40px;
+  margin-top: 40px;
 }
-
+*/
 .Flex-contact table td{
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
-    color: white;
-    align-items: center;    
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  color: white;
+  align-items: center;    
 }
 
-.facebook a{
-    color: white;
-    text-decoration: none;
+.smlogo{
+  width: 17px;
+  height: 20px;
+  padding-right: 5px;
 }
+.social-media{
+    background-color: rgb(41, 41, 41);
+    justify-content: center;
+    text-align: center;
+    padding-left: 30px;
+}
+
 
 .facebook{
-    padding: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
-    color: white;
-    
+  padding: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  color: white;
+  
 }
 
 .facebook:hover{
-    color: white;
-    transition: padding .5s ease-in-out;
-    padding-top: 40px;
-    padding-bottom: 0;
+  color: white;
+  transition: padding .5s ease-in-out;
+  padding-top: 40px;
+  padding-bottom: 0;
 }
 
 .github{
-    padding: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
-    color: white;
-    
+  padding: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  color: white;
+  
 }
 
 .github:hover{
-    color: white;
-    transition: padding .5s ease-in-out;
-    padding-top: 40px;
-    padding-bottom: 0;
+  color: white;
+  transition: padding .5s ease-in-out;
+  padding-top: 40px;
+  padding-bottom: 0;
 }
 
 .twitter{
-    padding: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
-    color: white;
-    
+  padding: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  color: white;
+  
 }
 
 .twitter:hover{
-    color: white;
-    transition: padding .5s ease-in-out;
-    padding-top: 40px;
-    padding-bottom: 0;
+  color: white;
+  transition: padding .5s ease-in-out;
+  padding-top: 40px;
+  padding-bottom: 0;
 }
 
 .email {
-    padding: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
-    color: white;
-    
+  padding: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  color: white;
+  
 }
 
 .email:hover{
-    color: white;
-    transition: padding .5s ease-in-out;
-    padding-top: 40px;
-    padding-bottom: 0;
+  color: white;
+  transition: padding .5s ease-in-out;
+  padding-top: 40px;
+  padding-bottom: 0;
 }
 
 .call{
-    padding: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
-    color: white;
-    
+  padding: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  color: white;
+  
 }
 
 .call:hover{
-    color: white;
-    transition: padding .5s ease-in-out;
-    padding-top: 40px;
-    padding-bottom: 0;
+  color: white;
+  transition: padding .5s ease-in-out;
+  padding-top: 40px;
+  padding-bottom: 0;
 }
 
 .Flex-contact .social-media img {
-    height: 20px;
+  height: 20px;
 }
 
 .Flex-contact hr{
@@ -328,57 +346,34 @@ nav a:hover {
 
 
 .copyright {
-    display: flex;
-    height: 100px;
-    margin: 0;
-    background-color: rgb(41, 41, 41);
-    justify-content: space-evenly;
-    
+  display: flex;
+  height: 100px;
+  margin: 0;
+  background-color: rgb(41, 41, 41);
+  justify-content: space-evenly;
+  
 }    
-    
+  
 .hr {
-    display: inline;
-    background-color: rgb(41, 41, 41);
-    margin: 0;
-    padding: 0;
+  display: inline;
+  background-color: rgb(41, 41, 41);
+  margin: 0;
+  padding: 0;
 }   
 
 hr {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    border: 2px solid red;
-    
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 2px solid red;
+  
 }
 
 .copyright .bottomline {
-    margin-top: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 18px;
-    color: white;
-     align: center;
+  margin-top: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  color: white;
+  align: center;
 }
-
-.footer {
-  text-align: center;
-  margin-top: 100px;
-}
-
-#contact-section {
-height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(to bottom left,#1a1a1a #333333);
-  margin-bottom: 40px; 
-  transition: background 1s ease,padding 4s ease;
-  cursor: pointer;
- 
-}
-
-
-
-

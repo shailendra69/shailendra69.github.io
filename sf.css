@@ -1,27 +1,18 @@
-/*
-body {
-  font-family: sans-serif;
-  line-height: 5px;
-  background-color:violet
-  width: 500px;
-  margin: auto;
-    font-family: 'Poppins', sans-serif;
-    padding: 20px;
-    color: var(--color-white);
-*/
+
 body{
     font-family: 'Noto Sans', sans-serif;
-    background-color: #fcf7b8;
+    background-color: violet; 
     margin:0 auto;
     width:85%;
     min-width:300px;
-    /* border: solid 1px; */
+    background-attachment: fixed;
+    
 }
 #title{
     text-align: center;
 }
 #survey-form{
-    background-color:#edebe6;
+    background-color:rgb(53, 45, 133);
     padding:20px;
     margin:0 auto;
     width:50%;
@@ -109,14 +100,6 @@ button {
   text-align: center;
 }
 
-/*.submit-button {
-  width: 100%;
-  padding: 10px;
-  background: green;
-  color: white;
-  border-radius: 12px;
-  cursor: pointer;*/
-}
 
 .imput-heading {
   margin: 2px auto 5px auto;

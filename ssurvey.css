@@ -1,7 +1,8 @@
 body{
     font-family: 'Noto Sans', sans-serif;
-    background-color: #fcf7b8;
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2FfreeCodeCamp%2Ftestable-projects-fcc%2Fissues%2F1045&psig=AOvVaw3p_aJEP3Mh41vsycquCKsN&ust=1596390970545000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOipyJ_K-uoCFQAAAAAdAAAAABAD); 
     margin:0 auto;
+    background-attachment: fixed;
     width:85%;
     min-width:300px;
     /* border: solid 1px; */
@@ -10,7 +11,7 @@ body{
     text-align: center;
 }
 #survey-form{
-    background-color:#edebe6;
+    background-color:rgb(53, 45, 133);
     padding:20px;
     margin:0 auto;
     width:50%;
@@ -30,14 +31,14 @@ body{
     font-weight: bold;
 }
 .container{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 15px;
-    grid-row-gap:10px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: min-content;
+    background-color: rgb(53, 45, 133);
+    opacity: 0.9;
 }
-/*input[type="text"], input[type="email"], input[type="number"]{
-    
-}*/
 .left{
     text-align:right;
 }
