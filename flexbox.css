@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Poppins:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,100&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
 body {
     margin: 0;
@@ -25,7 +26,7 @@ body {
      color: antiquewhite;
      font-size: 25px;
      text-decoration: none;
-     
+     margin-right: 25px;
      display: block;
      height: 60%;
      float: left;
@@ -38,7 +39,7 @@ body {
 
   nav a:hover
   {
-      background-color:#00223e ;
+      background-color:#45567d ;
       display: flex;
 
   }
@@ -59,7 +60,7 @@ body {
   }
 
   .flexhero-header h1 {
-      font-family:'Poppins', sans-serif;
+      font-family:'raleway', sans-serif;
       color: white;
       font-size: 50px;
       margin: 0px;
@@ -84,6 +85,11 @@ body {
     height: 80px; 
     padding-top: 10px;
 }
+
+  .photos-title h2{
+    font-family: 'raleway', sans-serif;
+    font-weight: 700;
+  }
 
  .photos {
      background-color:#627194;     
@@ -114,14 +120,10 @@ body {
     margin-bottom: 0px;
     margin-top: 0px;
   }
-.image3 {
-    background-color: #627194;
-    padding-left: 280px;
-}
 
 .image-caption p{
   margin: 0px;
- 
+  padding-top: 0px;
   width: 350px;
   height: 45px;
   background-color: black;
@@ -156,6 +158,10 @@ body {
   display: flex;
   justify-content: center;
   background-color: #627194;
+  transition: background 0.3s ease-out;
+  transition-delay: 0s;
+  transition-timing-function: ease-out;
+  transition-property: background;
 }
 
 .shownext a {
@@ -213,14 +219,13 @@ body {
 
 .Flex-Contact .contact-tagline {
   width: 100%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,'poppins' sans-serif;
   font-size: 20px;
   font-style: italic;
   word-spacing: 2px;
   color: white;
   background-color: rgb(41, 41, 41);
-  /*padding-bottom: 80px;
-  margin-bottom: 100px; */
+ 
 }
 
 .Flex-contact .social-media {
@@ -235,11 +240,7 @@ body {
   text-align: center;
   background-color: rgb(41, 41, 41);
 }
-/*
-.Flex-contact table {
-  margin-top: 40px;
-}
-*/
+
 .Flex-contact table td{
   padding: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -257,13 +258,15 @@ body {
     background-color: rgb(41, 41, 41);
     justify-content: center;
     text-align: center;
-    padding-left: 30px;
+    padding-left: 40px;
+    align-items: center;
+    marker-left: 30px;
 }
 
 
 .facebook{
   padding: 30px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Font Awesome 5 Brands", sans-serif;
   font-size: 30px;
   color: white;
   
@@ -351,11 +354,12 @@ body {
   margin: 0;
   background-color: rgb(41, 41, 41);
   justify-content: space-evenly;
+  border-top: 4px solid var(--main-red);
   
 }    
   
 .hr {
-  display: inline;
+  display: block;
   background-color: rgb(41, 41, 41);
   margin: 0;
   padding: 0;
