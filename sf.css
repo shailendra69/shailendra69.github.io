@@ -14,11 +14,12 @@ body{
 }
 #survey-form{
     background-color:rgb(53, 45, 133);
-    padding:10px;
+   /* padding:10px; */
     margin: auto;
     width:60%;
     border-radius:5px;
     color: white;
+
 }
 
 
@@ -126,7 +127,7 @@ button {
 
 .form-control {
   display: block;
-  width: 100%;
+  width: 98%;
   height: 10px;
   padding: 10px 5px;
   color: #495057;
