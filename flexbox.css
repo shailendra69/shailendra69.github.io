@@ -22,46 +22,6 @@ body {
 }
 
 
-#menu{
-    width: 35px;
-    height: 30px;
-    margin: 30px 0 20px 20px;
-    cursor: pointer;
-    padding-right: 15px;
-}
-
-.bar{
-    height: 5px;
-    width: 100%;
-    background-color: #b81568;
-    display: block;border-radius: 5px;
-    transform: 0.3s ease;
-}
-
-#bar1{
-    transform: translateY(-4px);
-}
-
-#bar3{
-    transform: translateY(4px);
-}
-
-.change .bar{
-    background-color: white;
-}
-
-.change #bar1{
-    transform: translateY(4px) rotateZ(45deg) ;
-}
-
-.change #bar3{
-    transform: translateY(-6px) rotateZ(45deg) ;
-}
-.change #bar2{
-    opacity: 0;
-}
-
-
 
   nav a
   {
@@ -300,9 +260,10 @@ body {
     background-color: rgb(41, 41, 41);
     justify-content: center;
     text-align: center;
-    padding-left: 190px;
+    padding-left: 130px;
     align-items: center;
     marker-left: 30px;
+    display: flex;
 }
 
 
