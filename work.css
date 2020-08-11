@@ -260,7 +260,7 @@ body {
     background-color: rgb(41, 41, 41);
     justify-content: center;
     text-align: center;
-    padding-left: 130px;
+   /* padding-left: 130px;  */
     align-items: center;
     marker-left: 30px;
     display: flex;

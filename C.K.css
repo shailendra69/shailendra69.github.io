@@ -117,9 +117,10 @@ nav a:active {
 }
 
 .main-container {
-    display: block;
-    width: 100%;
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
     background-color: silver;
 }
 
