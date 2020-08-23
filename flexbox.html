@@ -1,31 +1,48 @@
-<!DOCTYPE html>
-<html> 
+
+<!DOCTYPE html5>
+
+<html>
     <head>
-      <link href="flexbox.css" rel="stylesheet" >
-    	<title>Flexbox Assg.</title>
-    	
+        <title>My Profile</title>
 
+        <link href="flexbox.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <script>
+            function shownav() {
+                var links = document.querySelector(".links");
+                var icon = document.querySelector(".icon i");
+                if (links.style.display == "block") {
+                    links.style.display = "none";
+                    icon.classList.remove("fa-close");
+                    icon.classList.add("fa-bars");
+                } else {
+                    links.style.display = "block";
+                    icon.classList.remove("fa-bars");
+                    icon.classList.add("fa-close");
+                }
+            }
+        </script>
+    </head>
 
-    	</head>
-    	<body> 
+    <body>
+        <header>
+            <div class="profile">
+                <img src="images/logo.png" />
+            </div>
+            <nav class="links">
+                <a href="#">About</a>
+                <a href="#">Work</a>
+                <a href="#">Contact</a>
+            </nav>
+            <nav class="icon">
+                <i class="fa fa-bars" onclick="shownav()"></i>
+            </nav>
+        </header>
 
-    		<header>
-    
-       		<div class="flex-container">
-          <div> 
-    			   <img src="https://w7.pngwing.com/pngs/286/24/png-transparent-black-s-logo-metroid-prime-super-metroid-metroid-samus-returns-super-smash-bros-brawl-members-miscellaneous-angle-super-smash-bros-for-nintendo-3ds-and-wii-u.png" width="90px" height="60px" />
-    				</div>
-
-    	<div>  
-    			  <nav> 
-    			  	<a href="first.html">About</a>
-    			  	<a href="form.html">Work</a>
-    			  		<a href="form.html">Contact</a>
-    			  </nav>
-			</div>
-        
-
-			</header>
 
 			<section>
         <div class="flexhero-header" >
@@ -45,21 +62,26 @@
 
             <div class="photos">
       <div class="image1">
-     <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg" width="300px" height="400px" />
+      <a href="https://shailendra69.github.io/ssurvey.html" target="_blank">
+     <img src="images/surveyform.jpg" width="300px" height="400px" />
       <span class="image-caption">
+       
        <p><span class="show1"><</span>
-        Tribute Page
+        Survey Form
         <span class="show1">/></span>
+       
       </p>
     </span>
+    </a>
   </div>
   
      <div class="image2">  
-      <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png" width="300px" height="400px" />
+      <img src="images/cktshala.jpg" width="300px" height="400px" />
         
       <span class="image-caption">
       <p> <span class="show1"><</span>
-        Random Quote Machine
+        <a href="cricketassignment.html" target="_blank"></a>
+        Cricket Shala Assignment
         <span class="show1">/></span>
       </p>
     </span>
@@ -67,11 +89,12 @@
     
    
     <div class="image3">
-      <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png"
+      <img src="images/car.jpg"
        width="300px" height="400px" />
       <span class="image-caption">
        <p> <span class="show1"><</span>
-        JavaScript Calculator
+        <a href="carassignment.html" target="_blank"></a>
+        Car Assignment
         <span class="show1">/></span>
       </p>
     </span>
@@ -79,22 +102,24 @@
   </div>
    
            <div class="image4">
-     <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg"
+     <img src="images/zomato.png"
      width="300px" height="400px" />
       <span class="image-caption">
      <p>   <span class="show1"><</span>
-        Map Data Across the Globe
+        Zomato Clone
+        <a href="zomato.html" target="_blank"></a>
         <span class="show1">/></span>
       </p>
     </span>
   </div>
 
   <div class="image5">
-     <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png"
+     <img src="images/bus.JPG"
         width="300px" height="400px" />
       <span class="image-caption">
      <p> <span class="show1"><</span>
-        Wikipedia Viewer
+        Nightout 
+        <a href="cardesign.html"></a>
         <span class="show1">/></span>
       </p>
     </span>
@@ -102,10 +127,11 @@
   </div>
 
   <div class="image6">
-     <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png" width="300px" height="400px" />
+     <img src="images/flower.JPG" width="300px" height="400px" />
       <span class="image-caption">
        <p> <span class="show1"><</span>
-        Tic Tac Toe Game
+        Flower Pot Assignment
+        <a href="flowerpot.html"></a>
         <span class="show1">/></span>
       </p>
     </span>
@@ -135,15 +161,15 @@
   <div class="social-media">
    
         <div class="facebook">
-        <a href="#" class="social"><img src="images/facebook.png" width="30px" height="25px" /> Facebook </a> </div>
+        <a href="#" class="social" target="_blank"><i class="fa fa-facebook"></i> Facebook </a> </div>
 
-        <div class="github"><a href="#" class="social"><img src="images/github.png" width="30px" height="20px" /> github </a> </div>
+        <div class="github"><a href="#" class="social" target="_blank"><i class="fa fa-github"></i>  github </a> </div>
         
-        <div class="twitter"><a href="#"  class="social" ><img src="images/twitter.png" width="30px" height="20px" /> twitter</a> </div>
+        <div class="twitter"><a href="#"  class="social" target="_blank" ><i class="fa fa-twitter"></i></a> twitter</a> </div>
         
-        <div class="email"><a href="#" class="social"> <img src="images/mail.png" width="30px" height="20px" /> send a mail</a> </div>
+        <div class="email"><a href="#" class="social" target="_blank"> <i class="fa fa-envelope"></i> send a mail</a> </div>
         
-        <div class="call"><a href="#" class="social"><img src="images/call.png" width="30px" height="20px"> call </a> </div>
+        <div class="call"><a href="#" class="social" target="_blank"><i class="fa fa-phone"></i> call </a> </div>
      
   </div>
 

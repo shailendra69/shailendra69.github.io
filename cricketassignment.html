@@ -3,12 +3,23 @@
 <html>
     <head>
         <title>Cricket Shala Assignment</title>
-        <link rel=”canonical” href="https://www.cricketshala.com" />      
+
+        <link href="cricketassignment.css" rel="stylesheet" />
+        <link rel=”canonical” href=”https://www.cricketshala.com” />
         <meta name="viewport" content="width=device-width, initial-width=1.0">
-
-
-        <link href="C.K.css" rel="stylesheet" />
-           </head>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("menu-toggle");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+        
+    </head>
 
     <body>
         <header>
@@ -18,13 +29,25 @@
                 </div>
                 <div>
                     <nav>
-                        <a href="">
-                        	<u>Home</u></a>
-                        <a href="">Tips & Tactics</a>
-                        <a href="">Product Reviews</a>
-                        <a href="">Interviews & Bio</a>
+                        <div class="element">
+                            <a href="">
+                                <u> Home </u></a>
+                            <a href="">Tips & Tactics</a>
+                            <a href="">Product Reviews</a>
+                            <a href="">Interviews & Bio</a>
+                        </div>
+                        
                     </nav>
                 </div>
+            </div>
+            <div class="btn-menu">
+                <button onclick="myFunction()"><i class='fas fa-bars'> MENU</i></button>
+            </div>
+            <div id="menu-toggle" style="display: none;">
+                <p><a href="">Home</a></p>
+                <p><a href="">Tips & Tactics</a></p>
+                <p><a href="">Product Reviews</a></p>
+                <p><a href="">Interviews & Bio</a></p>
             </div>
         </header>
 
@@ -32,7 +55,7 @@
             <div class="heading">
                 <div>
                     <h1 class="heading1">
-                    Do you want to <u>improve your cricket skills</u>?
+                    Do you want to <u>improve your cricket skills</u>?1
                     </h1>
                     
                     <h2 class="heading2">
@@ -62,13 +85,13 @@
                         </div>
                         <hr />
                         <div class="review-comment">
-                            <div class="reviews"><img src="review.png"><a href="">Products reviews</a></div>
-                            <div class="comments"><img src="comment.png"><a href="">Leave a comment</a></div>
+                            <div class="reviews"><img src="images/review.png"><a href="">Products reviews</a></div>
+                            <div class="comments"><img src="images/comment.png"><a href="">Leave a comment</a></div>
                         </div>
                     </div>
                 
                     <div class="image-container">
-                        <img src="https://www.cricketshala.com/wp-content/uploads/2018/11/spektacom-sticker-sensor-2.png">
+                        <img src="https://www.cricketshala.com/wp-content/uploads/2018/11/spektacom-sticker-sensor-2.png" />
                         <div class="caption">
                             <p class="caption1"><a href="">Spektakom power bat sticker – Anil Kumble & Microsoft are making a smart cricket bat sticker</a></p>
                             <p class="caption2">Posted on <a href="">November 21, 2018</a> by <a href="">Rakesh</a></p>
@@ -77,12 +100,12 @@
                         </div>
                         <hr />
                         <div class="review-comment">
-                            <div class="reviews"><img src="review.png"><a href="">Products reviews</a></div>
-                            <div class="comments"><img src="comment.png"><a href="">Leave a comment</a></div>
+                            <div class="reviews"><img src="images/review.png"><a href="">Products reviews</a></div>
+                            <div class="comments"><img src="images/comment.png"><a href="">Leave a comment</a></div>
                         </div>
                     </div>
                     <div class="image-container">
-                        <img src="https://www.cricketshala.com/wp-content/uploads/2018/11/featured-image1.png">
+                        <img src="https://www.cricketshala.com/wp-content/uploads/2018/11/featured-image1.png" />
                         <div class="caption">
                             <p class="caption1"><a href="">How to convince your parents to allow you to play cricket</a></p>
                             <p class="caption2">Posted on <a href="">November 8, 2018</a> by <a href="">Rakesh</a></p>
@@ -91,14 +114,12 @@
                         </div>
                         <hr />
                         <div class="review-comment">
-                            <div class="reviews"><img src="review.png"><a href="">Products reviews</a></div>
-                            <div class="comments"><img src="comment.png"><a href="">Leave a comment</a></div>
+                            <div class="reviews"><img src="images/review.png"><a href="">Products reviews</a></div>
+                            <div class="comments"><img src="images/comment.png"><a href="">Leave a comment</a></div>
                         </div>
                     </div>
-                </div>
-                <div class="row-container">
                     <div class="image-container">
-                        <img src="https://www.cricketshala.com/wp-content/uploads/2018/10/prithvi-journey-collage.png">
+                        <img src="https://www.cricketshala.com/wp-content/uploads/2018/10/prithvi-journey-collage.png" />
                         <div class="caption">
                             <p class="caption1"><a href="">Prithvi Shaw biography – All about him from childhood to international cricket</a></p>
                             <p class="caption2">Posted on <a href="">October 23, 2018</a> by <a href="">Rakesh</a></p>
@@ -107,12 +128,12 @@
                         </div>
                         <hr />
                         <div class="review-comment">
-                            <div class="reviews"><img src="review.png"><a href="">Products reviews</a></div>
-                            <div class="comments"><img src="comment.png"><a href="">Leave a comment</a></div>
+                            <div class="reviews"><img src="images/review.png"><a href="">Products reviews</a></div>
+                            <div class="comments"><img src="images/comment.png"><a href="">Leave a comment</a></div>
                         </div>
                     </div>
                     <div class="image-container">
-                        <img src="https://www.cricketshala.com/wp-content/uploads/2018/09/how-to-become-cricketer.png">
+                        <img src="https://www.cricketshala.com/wp-content/uploads/2018/09/how-to-become-cricketer.png" />
                         <div class="caption">
                             <p class="caption1"><a href="">How to become cricketer in India – a proven strategy</a></p>
                             <p class="caption2">Posted on <a href="">September 24, 2018</a> by <a href="">Rakesh</a></p>
@@ -121,12 +142,12 @@
                         </div>
                         <hr />
                         <div class="review-comment">
-                            <div class="reviews"><img src="review.png"><a href="">Products reviews</a></div>
-                            <div class="comments"><img src="comment.png"><a href="">Leave a comment</a></div>
+                            <div class="reviews"><img src="images/review.png"><a href="">Products reviews</a></div>
+                            <div class="comments"><img src="images/comment.png"><a href="">Leave a comment</a></div>
                         </div>
                     </div>
                     <div class="image-container">
-                        <img src="https://www.cricketshala.com/wp-content/uploads/2018/09/how-care-cricket-bat.png">
+                        <img src="https://www.cricketshala.com/wp-content/uploads/2018/09/how-care-cricket-bat.png" />
                         <div class="caption">
                             <p class="caption1"><a href="">Cricket bat knocking – How to knock in & oiling of a cricket bat</a></p>
                             <p class="caption2">Posted on <a href="">September 4, 2018</a> by <a href="">Rakesh</a></p>
@@ -135,14 +156,12 @@
                         </div>
                         <hr />
                         <div class="review-comment">
-                            <div class="reviews"><img src="review.png"><a href="">Products reviews</a></div>
-                            <div class="comments"><img src="comment.png"><a href="">Leave a comment</a></div>
+                            <div class="reviews"><img src="images/review.png"><a href="">Products reviews</a></div>
+                            <div class="comments"><img src="images/comment.png"><a href="">Leave a comment</a></div>
                         </div>
                     </div>
-                </div>
-                <div class="row-container">
                     <div class="image-container">
-                        <img src="https://www.cricketshala.com/wp-content/uploads/2018/08/prateek-1.png">
+                        <img src="https://www.cricketshala.com/wp-content/uploads/2018/08/prateek-1.png" />
                         <div class="caption">
                             <p class="caption1"><a href="">Interview with Prateek Satpute – Who left top MNC job to live his passion about cricket and blogging</a></p>
                             <p class="caption2">Posted on <a href="">August 29, 2018</a> by <a href="">Rakesh</a></p>
@@ -151,12 +170,12 @@
                         </div>
                         <hr />
                         <div class="review-comment">
-                            <div class="reviews"><img src="review.png"><a href="">Products reviews</a></div>
-                            <div class="comments"><img src="comment.png"><a href="">Leave a comment</a></div>
+                            <div class="reviews"><img src="images/review.png"><a href="">Products reviews</a></div>
+                            <div class="comments"><img src="images/comment.png"><a href="">Leave a comment</a></div>
                         </div>
                     </div>
                     <div class="image-container">
-                        <img src="https://www.cricketshala.com/wp-content/uploads/2018/08/ultimate-guide-to-buy-cricket-bat.png">
+                        <img src="https://www.cricketshala.com/wp-content/uploads/2018/08/ultimate-guide-to-buy-cricket-bat.png" />
                         <div class="caption">
                             <p class="caption1"><a href="">Ultimate guide to buy cricket bat in 2018</a></p>
                             <p class="caption2">Posted on <a href="">August 16, 2018</a> by <a href="">Rakesh</a></p>
@@ -165,12 +184,12 @@
                         </div>
                         <hr />
                         <div class="review-comment">
-                            <div class="reviews"><img src="review.png"><a href="">Products reviews</a></div>
-                            <div class="comments"><img src="comment.png"><a href="">Leave a comment</a></div>
+                            <div class="reviews"><img src="images/review.png"><a href="">Products reviews</a></div>
+                            <div class="comments"><img src="images/comment.png"><a href="">Leave a comment</a></div>
                         </div>
                     </div>
                     <div class="image-container">
-                        <img src="https://www.cricketshala.com/wp-content/uploads/2018/08/cricket-batting-tips.png">
+                        <img src="https://www.cricketshala.com/wp-content/uploads/2018/08/cricket-batting-tips.png" />
                         <div class="caption">
                             <p class="caption1"><a href="">Cricket batting tips – learn batting skills in cricket</a></p>
                             <p class="caption2">Posted on <a href="">August 9, 2018</a> by <a href="">Rakesh</a></p>
@@ -179,14 +198,13 @@
                         </div>
                         <hr />
                         <div class="review-comment">
-                            <div class="reviews"><img src="review.png"><a href="">Products reviews</a></div>
-                            <div class="comments"><img src="comment.png"><a href="">Leave a comment</a></div>
+                            <div class="reviews"><img src="images/review.png"><a href="">Products reviews</a></div>
+                            <div class="comments"><img src="images/comment.png"><a href="">Leave a comment</a></div>
                         </div>
                     </div>
-                </div>
-                <div class="row-containar">
+                
                     <div class="image-container">
-                        <img src="https://www.cricketshala.com/wp-content/uploads/2018/08/%E2%80%9CFind-the-Best-Cricket-Bat-for-the-Leather-Ball-in-2018%E2%80%9D.png" width="300px" height="350px">
+                        <img src="https://www.cricketshala.com/wp-content/uploads/2018/08/%E2%80%9CFind-the-Best-Cricket-Bat-for-the-Leather-Ball-in-2018%E2%80%9D.png" />
                         <div class="caption">
                             <p class="caption1"><a href="">Best cricket bat for the leather ball in 2018</a></p>
                             <p class="caption2">Posted on <a href="">August 4, 2018</a> by <a href="">Rakesh</a></p>
@@ -195,11 +213,11 @@
                         </div>
                         <hr />
                         <div class="review-comment">
-                            <div class="reviews"><img src="review.png"><a href="">Products reviews</a></div>
-                            <div class="comments"><img src="comment.png"><a href="">Leave a comment</a></div>
+                            <div class="reviews"><img src="images/review.png"><a href="">Products reviews</a></div>
+                            <div class="comments"><img src="images/comment.png"><a href="">Leave a comment</a></div>
                         </div>
-                    </div>
-                </div>
+                    
+                
             </div>
         </section>
         <footer>
@@ -213,5 +231,17 @@
                 </nav>
             </div>
         </footer>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("menu-toggle");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+            </script>
+
     </body>
 </html>

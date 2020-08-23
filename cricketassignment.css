@@ -1,9 +1,7 @@
-  
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Poppins:ital,wght@1,100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,100&family=Roboto&display=swap");
-
 
 body {
     margin: 0;
@@ -12,10 +10,9 @@ body {
 
 .navigation {
     display: flex;
-    height: 60px;
     background-color: white;
     margin: 0;
-    padding-right: 40px;
+    padding-right: 30px;
     justify-content: space-between;
 }
 .logo img {
@@ -23,12 +20,11 @@ body {
     padding: 10px;
     margin-left: 25px;
 }
-
 nav a {
     display: block;
     float: left;
-    font-family: "Raleway", sans-serif;
-    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
     color: black;
     text-decoration: none;
     margin-right: 0px;
@@ -38,28 +34,51 @@ nav a {
     padding-right: 20px;
 }
 
-nav a:active {
+nav a :active {
+    text-decoration: underline;
+
+}
+
+.element a {
+    display: block;
+    float: left;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    margin-right: 0px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+.element a:active {
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 300px) {
-    .navigation {
-        display: block;
-        height: 400px;
-    }
-    nav a {
-        float: none;
-        width: 100%;
-    }
+
+.menu-toggle {
+    visibility: hidden;
+    display: none;
+}
+.btn-menu {
+    visibility: hidden;
+    display: none;
+}
+button {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .heading {
     display: flex;
-    height: 300px;
+    width: 100%;
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin: 0;
+    padding: 30px 0px 30px 0px;
     background-color: rgb(50, 100, 255);
 }
 
@@ -71,7 +90,7 @@ nav a:active {
     font-size: 32px;
     font-weight: bold;
     color: white;
-    margin: 20px;
+    margin: 30px;
     padding: 0;
 }
 
@@ -118,40 +137,36 @@ nav a:active {
 
 .main-container {
     display: flex;
-    flex-wrap: wrap;
     
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: silver;
 }
 
 .row-container {
     display: flex;
-
     justify-content: space-between;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-.row-containar {
-	display: flex;
-	justify-content: space-between;
-	width: 750px;
+    flex-wrap: wrap;
 
 }
+
 
 .image-container {
-    display: block;
-    justify-content: center;
-    float: left;
+    width: 360px;
     margin: 15px;
     padding: 20px;
     background-color: white;
-    width: 50%;
+    box-sizing: inherit;
+    -webkit-tap-highlight-color:transparent;
 }
 
 .image-container img {
     width: 100%;
+    /*object-fit: scale-down;*/
+    align: center;
 }
 
 .image-container p {
@@ -248,10 +263,10 @@ nav a:active {
     display: flex;
     justify-content: center;
     align-content: center;
-    height: 60px;
+    flex-wrap: wrap;
     background-color: black;
     color: white;
-    opacity: 0.9;
+    height: 60px;
 }
 
 .footer-navigation a {
@@ -260,3 +275,74 @@ nav a:active {
     margin-left: 10px;
 }
 
+.footer-navigation nav a :hover {
+
+   background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+    .Navigation {
+        display: flex;
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+        margin: 0;
+    }
+
+    .element {
+        display: none;
+    }
+    .element a {
+        display: none;
+    }
+
+    .btn-menu {
+        visibility: visible;
+        display: flex;
+        float: none;
+        width: 100%;
+        justify-content: center;
+    }
+    .btn-menu button {
+        float: none;
+        visibility: visible;
+        margin: 0;
+        padding: 0;
+        width: 100px;
+        height: 30px;
+        border: none;
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        background-color: rgb(50, 100, 255);
+    }
+    button i {
+        color: white;
+        width: 100px;
+        padding: 0;
+        margin: 0;
+    }
+    #menu-toggle {
+        display: flex;
+        justify-content: center;
+        float: none;
+        width: 100%;
+        font-family: "raleway", sans-serif;
+        font-size: 16px;
+    }
+    #menu-toggle p {
+        text-align: center;
+        font-family: "raleway", sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    #menu-toggle a {
+        width: 100%;
+        text-decoration: none;
+        color: black;
+        font-family: "raleway", sans-serif;
+        font-size: 16px;
+    }
+}

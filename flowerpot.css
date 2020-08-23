@@ -1,0 +1,199 @@
+body {
+
+	margin: 0;
+	background-color: black;
+
+}
+
+.container {
+    margin: 100px;
+    height: 800px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.flower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.fase1 {
+    height: 100px;
+    width: 280px;
+    border-radius: 50px;
+    background-color: rgb(122, 78, 226);
+    z-index: 2;
+}
+.fase2 {
+    height: 100px;
+    width: 280px;
+    border-radius: 50px;
+    background-color: rgb(122, 78, 226);
+    transform: rotate(60deg);
+    position: absolute;
+    z-index: 3;
+}
+.fase3 {
+    height: 100px;
+    width: 280px;
+    border-radius: 50px;
+    background-color: rgb(122, 78, 226);
+    transform: rotate(300deg);
+    position: absolute;
+    z-index: 4;
+}
+.stem {
+    width: 20px;
+    height: 250px;
+    background-color: green;
+    position: absolute;
+    margin: 250px;
+    z-index: 1;
+}
+
+.pot {
+    width: 280px;
+    height: 64px;
+    background-color: #ff7043;
+    position: absolute;
+    margin-top: 500px;
+}
+
+.pot1 {
+    width: 250px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid #d66f51;
+    top: 664px;
+}
+.pot2 {
+    width: 150px;
+    height: 0px;
+    position: absolute;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 150px solid #ff7043;
+    top: 690px;
+}
+.right-leaf {
+    width: 50px;
+    height: 0px;
+    position: absolute;
+    top: 470px;
+    border-left: 20px solid darkgreen;
+    border-top: 50px solid darkgreen;
+    border-bottom: 50px solid darkgreen;
+    border-right: 20px solid darkgreen;
+    border-radius: 50% 50% 50% 0;
+    margin-left: 135px;
+    transform: rotate(20deg);
+}
+
+.left-leaf {
+    width: 50px;
+    height: 0px;
+    position: absolute;
+    top: 400px;
+    border-left: 20px solid darkgreen;
+    border-top: 50px solid darkgreen;
+    border-bottom: 50px solid darkgreen;
+    border-right: 20px solid darkgreen;
+    border-radius: 0 50% 50% 50%;
+    margin-left: -135px;
+    transform: rotate(160deg);
+}
+
+.inner-right {
+    width: 25px;
+    height: 0px;
+    position: absolute;
+    top: 0px;
+    border-left: 10px solid green;
+    border-top: 25px solid green;
+    border-bottom: 25px solid green;
+    border-right: 10px solid green;
+    border-radius: 50% 50% 50% 0;
+    margin-left: 10px;
+    transform: rotate(0deg);
+}
+.left-inner {
+    width: 25px;
+    height: 0px;
+    position: absolute;
+    top: -50px;
+    border-left: 10px solid green;
+    border-top: 25px solid green;
+    border-bottom: 25px solid green;
+    border-right: 10px solid green;
+    border-radius: 0% 50% 50% 50%;
+    margin-left: 10px;
+    transform: rotate(0deg);
+}
+
+.left-eye {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -80px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 5;
+}
+.innerleft-eye {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 9;
+    
+}
+@keyframes orbit {
+    from {
+        transform: rotate(0deg) translateX(10px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(10px) rotate(-360deg);
+    }
+}
+.right-eye {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 80px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 6;
+}
+.innerRight-eye {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 8;
+    
+}
+.nose {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 40px;
+    background-color: pink;
+    border-radius: 50%;
+    z-index: 7;
+}
