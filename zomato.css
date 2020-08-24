@@ -185,7 +185,7 @@ body {
   color: red;
   font-size: 20px;
   padding-top: 15px;
-  padding-right: 50px;
+  padding-right: 60px;
 
 }
  
@@ -193,34 +193,74 @@ body {
 
   display: flex;
   flex-wrap: wrap;
+  width: 90%;
+  border : 2px orangered;
+  height: 150px;
+  color: white;
+  font-size: 20px;
+  align-items: center;
   justify-content: space-between;
   margin: 0px 40px 0px 40px;
 }
 
 
-.images {
-
-  background-image: url(images/food.jpg);
-  height: auto;
-  width: 250px;
-  color: #ffffff;
-  border-radius: 10px;
-  padding-bottom: 20px;
-  padding-left: 15px;
-  font-family: sans-serif;
+.coll-images {
+    display: flex;
+    width: 75%;
+    margin-left: 135px;
+    margin-bottom: 20px;
+    border: 2px orangered;
+    height: 220px;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+}
+.coll-images1 {
+    background-image: url("images/image1.jpg");
+    height: 100%;
+    background-position: center;
+    width: 23%;
+    background-size: cover;
+    border-radius: 7px;
+}
+.coll-caption {
+    margin-top: 165px;
+    margin-left: 10px;
+    align-items: center;
+}
+.coll-caption div {
+    align-items: center;
+}
+.coll-caption i {
+    font-size: 10px;
+    align-items: center;
+}
+.coll-images2 {
+    background-image: url("images/image2.jpg");
+    height: 100%;
+    background-position: center;
+    width: 24%;
+    background-size: cover;
+    border-radius: 7px;
 }
 
-.first {
-
-  color: #ffffff;
-  padding-top: 240px;
-  font-size: 20px;
-  padding-bottom: 10px;
-
+.coll-images3 {
+    background-image: url("images/image3.jpg");
+    height: 100%;
+    background-position: center;
+    width: 24%;
+    background-size: cover;
+    border-radius: 7px;
 }
 
-.images span {
-  font-size: 15px;
+.coll-images4 {
+    background-image: url("images/image4.jpg");
+    height: 100%;
+    background-position: center;
+    width: 24%;
+    background-size: cover;
+    border-radius: 7px;
 }
 
 .middle h1 {
@@ -271,7 +311,253 @@ body {
   font-family: sans-serif;
 }
 
+.mobile {
+    display: flex;
+    width: 100%;
+    background-color: rgb(250, 242, 243);
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.mobile img {
+    width: 250px;
+}
+.mobile-side {
+    width: 50%;
+    margin-left: 40px;
+    justify-content: center;
+    align-content: center;
+    padding-left: 40px;
 
+}
+
+.mobile-title {
+    width: 100%;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.mobile-subtitle {
+    width: 100%;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.share {
+    margin-top: 15px;
+    font-family: sans-serif;
+}
+.share input[type="radio"] {
+    font-size: 30px;
+    width: 30px;
+    color: red;
+}
+.share input[type="Text"] {
+    font-size: 18px;
+    width: 65%;
+    height: 40px;
+    margin-top: 10px;
+    color: gray;
+    border-radius: 5px;
+    border: 0.5px solid lightgray;
+}
+.share input[type="button"] {
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+    color: white;
+    background-color: rgb(252, 82, 82);
+    border-radius: 5px;
+    border: none;
+    font-size: 13px;
+}
+.download-title {
+    color: gray;
+    font-family: sans-serif;
+    padding-top: 20px;
+}
+.download {
+    display: flex;
+    width: 65%;
+    margin-top: 15px;
+    justify-content: left;
+}
+.download img {
+    margin-right: 15px;
+    width: 150px;
+}
+.explore {
+    padding-left: 100px;
+    background-color: rgb(252, 252, 252);
+    font-family: sans-serif;
+}
+.explore-title {
+    color: rgb(54, 54, 54);
+    font-size: 30px;
+    line-height: 60px;
+}
+.explore-subtitle {
+    font-size: 23px;
+    color: rgb(54, 54, 54);
+    line-height: 40px;
+    font-family: sans-serif;
+}
+.foods-near {
+    margin-bottom: 50px;
+}
+.foods-near ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.foods-near i {
+    font-size: 20px;
+    color: black;
+}
+
+.foods-near li {
+    margin-left: 25px;
+    color: rgb(130, 130, 130);
+    line-height: 32px;
+}
+.foods-near a {
+    text-decoration: none;
+    color: rgb(130, 130, 130);
+    font-size: 18px;
+}
+
+.foods-near a:hover {
+    color: rgb(15, 15, 15);
+}
+.rest-col {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+}
+.rest-col a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: left;
+    width: 19%;
+    color: rgb(130, 130, 130);
+    line-height: 40px;
+}
+.rest-col a:hover {
+    color: rgb(15, 15, 15);
+}
+.cmore a {
+    width: 8%;
+    color: black;
+    font-weight: bolder;
+    border-bottom: 2px solid black;
+}
+
+.footer {
+    background-color: rgb(248, 248, 248);
+    font-family: sans-serif;
+    color: black;
+    padding: 50px;
+}
+.footer img {
+    height: 30px;
+}
+.country {
+    width: 100px;
+    float: right;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.country img {
+    width: 50px;
+}
+.language {
+    width: 100px;
+    float: right;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.footer-details {
+    display: flex;
+    color: black;
+    margin-top: 20px;
+    opacity: 0.9;
+}
+.company {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.company a {
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 14px;
+}
+.foodies {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.foodies a {
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 14px;
+}
+.restaurant {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.restaurant a {
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.for-you {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.for-you a {
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 14px;
+}
+.social-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links a {
+    text-decoration: none;
+
+    font-size: 14px;
+}
+.social-links img {
+    height: 40px;
+    margin: 5px;
+}
+.links i {
+    color: black;
+    font-size: 18px;
+    margin: 7px;
+}
+.footer select #language option[value="English"] {
+    background-image: url("images/globe.jpg");
+}
+.footer select #country option[value="English"] {
+    background-image: url("images/flag-india.jpg");
+}
 
 @media (max-width: 700px) {
   

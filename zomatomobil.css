@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Poppins:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,100&family=Roboto&display=swap");
+
+body {
+
+    margin: 0;
+
+}
+
+header {
+
+    height: 50px;
+    background-color: #cb202d;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 0;
+    box-shadow: 0 2px lightgray;
+    z-index: 50;
+}
+
+.navbar-left {
+     
+    float: left;
+    height: 100%;
+    display: flex;
+    -webkit-justify-content : flex-start; 
+	cursor: pointer;
+}
+
+.navbar-title {
+
+	padding-left: 10px;
+	line-height: 45px;
+}
+
+.navbar-right {
+
+	float: right;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 20px;
+}
+
+.nav-search {
+
+	padding: 0 15px;
+	color: #fff;
+	height: 100%;
+}
+
+.search-icon {
+	line-height: 40px;
+}
+
+i.icon {
+
+	font-style: normal;
+	font-weight: 400;
+	speak: none;
+	opacity: 1;
+	height: 100%;
+	font-family: zombats-pws;
+	content: attr(data-icon);
+	text-decoration: inherit;
+	text-align: center;
+	-webkit-font-smoothing :antialiased;
+	backface-visibility: hidden;
+}
+
+i.icon.search:beforev{
+
+	content: "/E918";
+}
+
+.navbar-profile {
+
+	padding-right: 10px;
+}
