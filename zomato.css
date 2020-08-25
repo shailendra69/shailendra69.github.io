@@ -40,6 +40,10 @@ body {
   
 }
 
+.title img {
+	width: 300px;
+}
+
 .tagline {
 
   color: #ffffff;
@@ -105,6 +109,19 @@ body {
   border: 1px solid red;
   padding-top: 20px;
 
+}
+
+.fa {
+
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+}
+
+.fa-search:before {
+	content: "\f002"
 }
 
 
@@ -204,7 +221,7 @@ body {
 }
 
 
-.coll-images {
+.middel-images {
     display: flex;
     width: 75%;
     margin-left: 135px;
@@ -215,8 +232,9 @@ body {
     color: white;
     font-size: 20px;
     align-items: center;
-}
-.coll-images1 {
+} 
+
+.middel-images1 {
     background-image: url("images/image1.jpg");
     height: 100%;
     background-position: center;
@@ -224,19 +242,24 @@ body {
     background-size: cover;
     border-radius: 7px;
 }
-.coll-caption {
+
+.middel-caption {
     margin-top: 165px;
     margin-left: 10px;
     align-items: center;
 }
-.coll-caption div {
+
+.middel-caption div {
     align-items: center;
 }
-.coll-caption i {
+
+
+.middel-caption i {
     font-size: 10px;
     align-items: center;
 }
-.coll-images2 {
+
+.middel-images2 {
     background-image: url("images/image2.jpg");
     height: 100%;
     background-position: center;
@@ -245,7 +268,7 @@ body {
     border-radius: 7px;
 }
 
-.coll-images3 {
+.middel-images3 {
     background-image: url("images/image3.jpg");
     height: 100%;
     background-position: center;
@@ -254,7 +277,7 @@ body {
     border-radius: 7px;
 }
 
-.coll-images4 {
+.middel-images4 {
     background-image: url("images/image4.jpg");
     height: 100%;
     background-position: center;
@@ -275,7 +298,7 @@ body {
 
 }
 
-.flex-more {
+.flex-boxes {
 
   display: flex;
   flex-wrap: wrap;
@@ -319,9 +342,11 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 .mobile img {
     width: 250px;
 }
+
 .mobile-side {
     width: 50%;
     margin-left: 40px;
@@ -344,15 +369,18 @@ body {
     font-size: 16px;
     font-family: sans-serif;
 }
+
 .share {
     margin-top: 15px;
     font-family: sans-serif;
 }
+
 .share input[type="radio"] {
     font-size: 30px;
     width: 30px;
     color: red;
 }
+
 .share input[type="Text"] {
     font-size: 18px;
     width: 65%;
@@ -362,6 +390,7 @@ body {
     border-radius: 5px;
     border: 0.5px solid lightgray;
 }
+
 .share input[type="button"] {
     height: 40px;
     padding-left: 20px;
@@ -373,72 +402,84 @@ body {
     border: none;
     font-size: 13px;
 }
-.download-title {
+
+.store {
     color: gray;
     font-family: sans-serif;
     padding-top: 20px;
 }
+
 .download {
     display: flex;
     width: 65%;
     margin-top: 15px;
     justify-content: left;
 }
+
 .download img {
     margin-right: 15px;
     width: 150px;
 }
-.explore {
+
+.aria {
     padding-left: 100px;
     background-color: rgb(252, 252, 252);
     font-family: sans-serif;
 }
-.explore-title {
+
+.aria-title {
     color: rgb(54, 54, 54);
     font-size: 30px;
     line-height: 60px;
 }
-.explore-subtitle {
+
+.aria-subtitle {
     font-size: 23px;
     color: rgb(54, 54, 54);
     line-height: 40px;
     font-family: sans-serif;
 }
-.foods-near {
+
+.food-shop {
     margin-bottom: 50px;
 }
-.foods-near ul {
+
+.food-shop ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
 }
-.foods-near i {
+
+.food-shop i {
     font-size: 20px;
     color: black;
 }
 
-.foods-near li {
+.food-shop li {
     margin-left: 25px;
     color: rgb(130, 130, 130);
     line-height: 32px;
 }
-.foods-near a {
+
+.food-shop a {
     text-decoration: none;
     color: rgb(130, 130, 130);
     font-size: 18px;
 }
 
-.foods-near a:hover {
+.food-shop a:hover {
     color: rgb(15, 15, 15);
 }
-.rest-col {
+
+.cities {
     display: inline-block;
     text-align: left;
     width: 100%;
     margin-bottom: 50px;
     font-family: sans-serif;
 }
-.rest-col a {
+
+.cities a {
     text-decoration: none;
     display: inline-block;
     text-align: left;
@@ -446,9 +487,11 @@ body {
     color: rgb(130, 130, 130);
     line-height: 40px;
 }
-.rest-col a:hover {
+
+.cities a:hover {
     color: rgb(15, 15, 15);
 }
+
 .cmore a {
     width: 8%;
     color: black;
@@ -462,21 +505,11 @@ body {
     color: black;
     padding: 50px;
 }
+
 .footer img {
     height: 30px;
 }
-.country {
-    width: 100px;
-    float: right;
-    height: 40px;
-    font-size: 18px;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    margin-right: 15px;
-}
-.country img {
-    width: 50px;
-}
+
 .language {
     width: 100px;
     float: right;
@@ -485,77 +518,112 @@ body {
     border: 1px solid lightgray;
     border-radius: 5px;
 }
-.footer-details {
+
+.footer-section {
     display: flex;
     color: black;
     margin-top: 20px;
     opacity: 0.9;
 }
+
 .company {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-}
-.company a {
-    text-decoration: none;
-    line-height: 30px;
-    font-size: 14px;
-}
-.foodies {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-}
-.foodies a {
-    text-decoration: none;
-    line-height: 30px;
-    font-size: 14px;
-}
-.restaurant {
+
     display: flex;
     flex-direction: column;
     width: 20%;
 }
 
+.company a {
+
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.foodies {
+
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.foodies a {
+
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.restaurant {
+
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+
 .restaurant a {
+
     text-decoration: none;
     line-height: 30px;
     font-size: 14px;
 }
 
 .for-you {
+
     display: flex;
     flex-direction: column;
     width: 20%;
 }
+
 .for-you a {
+
     text-decoration: none;
     line-height: 30px;
     font-size: 14px;
 }
+
 .social-links {
+
     display: flex;
     flex-direction: column;
 }
 
 .social-links a {
+
     text-decoration: none;
 
     font-size: 14px;
 }
+
 .social-links img {
+
     height: 40px;
     margin: 5px;
 }
+
+.bottomline {
+  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 13px;
+  color: gray;
+
+  align: center;
+}
+
 .links i {
     color: black;
     font-size: 18px;
     margin: 7px;
 }
+
 .footer select #language option[value="English"] {
+
     background-image: url("images/globe.jpg");
 }
+
 .footer select #country option[value="English"] {
+
     background-image: url("images/flag-india.jpg");
 }
 

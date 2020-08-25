@@ -1,0 +1,113 @@
+<!DOCTYPE html5>
+
+<html>
+    <head>
+        <title>Table Assignment</title>
+
+        <link href="table.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        </head>
+
+    <body>
+        <header>
+            <div class="heading">
+            	<div class="flex-box">
+            		<img src="images/logo.png">
+            		<div class="tags">
+            	     <h1>XYZ</h1>
+            		 <p>SOFTWARE</p>
+            	</div>
+            <div class="notification">
+            	<i class="fa fa-bell" aria-hidden="true"></i>
+            	<h1>5</h1>
+               </div>
+
+            <div class="icon">
+            	<i class="fa fa-user" aria-hidden="true"></i>
+            <h3> Shailendra </h3>
+            <i class="fa fa-sort-desc" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+    <section>
+        <div class="main-container">
+            <header class="header">
+                <div class="challan">
+                    <div class="circle">
+                        <i class="fa fa-minus"></i>
+                    </div>
+                    <div>Challan & Deductions</div>
+                </div>
+                - - -
+                <div class="tds">
+                    <div class="circle">
+                        <i class="fa fa-rupee"></i>
+                    </div>
+                    TDS Computation
+                </div>
+                - - -
+                <div class="fvu">
+                    <div class="circle">
+                        <i class="fa fa-info"></i>
+                    </div>
+                    FVU Generation
+                </div>
+                - - -
+                <div class="etds">
+                    <div class="circle">
+                        <i class="fa fa-file-text-o"></i>
+                    </div>
+                    eTDS Filling
+                </div>
+                <a href="">Return Overview</a>
+            </header>
+            <div class="fvu-table">
+                FVU Generation
+                <table>
+                    <tr>
+                        <th>Section/Record Type</th>
+                        <th>Field Name</th>
+                        <th>Error type</th>
+                        <th>Error Code & Description</th>
+                        <th>View & fix Error</th>
+                    </tr>
+                    <tr>
+                        <td>Challan</td>
+                        <td>Bank Challan number</td>
+                        <td class="error">Error as per FVU</td>
+                        <td>Challan number 12345 is not valid</td>
+                        <td><i class="fa fa-eye"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Deducted</td>
+                        <td>PAN</td>
+                        <td class="sw-warning">Software warning</td>
+                        <td>Unverified PAN information</td>
+                        <td><i class="fa fa-eye"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Challan</td>
+                        <td>Bank Challan Number</td>
+                        <td class="sw-warning">Software warning</td>
+                        <td>Unverified Challan details available</td>
+                        <td><i class="fa fa-eye"></i></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer">
+                <button type="button" id="validate">Validate Again</button>
+                <button type="button" id="download">
+                    Download FVU File
+                </button>
+                <button type="button" id="proceed">
+                    Proceed to eTDS Filling
+                </button>
+            </div>
+        </div>
+        </section>
+    </body>
+</html>
