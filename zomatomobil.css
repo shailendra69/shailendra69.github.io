@@ -80,3 +80,9 @@ i.icon.search:beforev{
 
 	padding-right: 10px;
 }
+
+.main-container {
+
+	background-color: black;
+	margin-top: 40px;
+}
