@@ -171,6 +171,11 @@ body {
 
 }
 
+.photos a {
+  text-decoration: none;
+  color: black;
+}
+
 .heading {
 
   font-size: 30px;
