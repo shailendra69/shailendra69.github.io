@@ -344,5 +344,9 @@ button {
         color: black;
         font-family: "raleway", sans-serif;
         font-size: 16px;
+ 
+    }
+    .image-container {
+        width: 100%;
     }
 }
