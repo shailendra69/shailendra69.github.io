@@ -1,88 +1,205 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Poppins:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,100&family=Roboto&display=swap");
 
 body {
-
+    background-color: #edf1f4;
     margin: 0;
-
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+@media screen(max-width:400px) {
+    .main-container {
+        width: 25%;
+    }
+}
+header {
+    width: 100%;
 }
 
-header {
-
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 50px;
     background-color: #cb202d;
-    position: fixed;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 5px 0;
-    box-shadow: 0 2px lightgray;
-    z-index: 50;
 }
-
-.navbar-left {
-     
-    float: left;
-    height: 100%;
+.search i {
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.logo img {
+    margin-left: 20px;
+    height: 20px;
+}
+.search-container {
+    align-content: center;
+    width: 96%;
+    padding: 5% 2% 0 2%;
+}
+.location {
     display: flex;
-    -webkit-justify-content : flex-start; 
-	cursor: pointer;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: 16px;
+    color: #33373d;
+    font-weight: bold;
+    margin-bottom: 2px;
+    background-color: white;
+    border-radius: 3px;
+}
+.location i {
+    color: gray;
+    font-size: 16px;
+    margin: 6px;
+}
+.search-box {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: left;
+    align-items: center;
+    padding: 5px;
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 2px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 2px lightgray;
+}
+.search-box i {
+    color: gray;
+    font-size: 14px;
+    margin: 5px;
+}
+.resto-list p {
+    color: gray;
+    font-size: 17px;
+}
+.resto-list {
+    width: 100%;
+}
+.resto-list p {
+    margin-left: 2%;
+}
+.resto {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    box-shadow: 0 2px lightgray;
+}
+.resto-img img {
+    width: 100px;
+    height: 100px;
+    
+    object-fit: cover;
+}
+.resto-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 10px;
+    line-height: 20px;
+}
+.resto-name {
+    color: #33373d;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.dishes {
+    color: gray;
+    font-size: 13px;
+}
+.rate {
+    color: gray;
+    font-size: 13px;
+}
+.del-time {
+    display: flex;
+    color: #33373d;
+    font-size: 13px;
+    align-items: center;
+}
+.del-time i {
+    font-size: 5px;
+    margin: 10px;
 }
 
-.navbar-title {
-
-	padding-left: 10px;
-	line-height: 45px;
+.banner {
+    justify-content: left;
+    width: 96%;
+    padding: 2%;
+}
+.upper-banner {
+    display: flex;
+    background-image: url("https://b.zmtcdn.com/application/images/pwa/o2_banner_background_blurred.jpg");
+    height: 100px;
+    align-items: center;
+}
+.upper-banner img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+.upside-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    line-height: 26px;
+    margin-left: 10px;
 }
 
-.navbar-right {
-
-	float: right;
-	height: 100%;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	padding-right: 20px;
+.banner-title {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.nav-search {
-
-	padding: 0 15px;
-	color: #fff;
-	height: 100%;
+.banner-subtitle {
+    color: white;
+    font-size: 14px;
 }
-
-.search-icon {
-	line-height: 40px;
+.lower-banner {
+    width: 100%;
+    background-color: white;
+    padding-bottom: 10px;
 }
-
-i.icon {
-
-	font-style: normal;
-	font-weight: 400;
-	speak: none;
-	opacity: 1;
-	height: 100%;
-	font-family: zombats-pws;
-	content: attr(data-icon);
-	text-decoration: inherit;
-	text-align: center;
-	-webkit-font-smoothing :antialiased;
-	backface-visibility: hidden;
+.middle-banner {
+    display: flex;
+    width: 100%;
+    background-color: white;
 }
-
-i.icon.search:beforev{
-
-	content: "/E918";
+.middle-banner i {
+    color: green;
+    font-size: 14px;
 }
-
-.navbar-profile {
-
-	padding-right: 10px;
+.left-right {
+    width: 50%;
+    color: #33373d;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 2%;
 }
-
-.main-container {
-
-	background-color: black;
-	margin-top: 40px;
+.lower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 60px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    margin: auto;
+}
+.lower p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
