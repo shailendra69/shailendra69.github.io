@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+      <link href="marvel.css" rel="stylesheet" >
+       <meta name="viewport" content="width=device-width, initial-width=1.0">
+      <title> Marvel Assignment </title>
+    </head>
+    <body> 
+
+        <section>
+<div class="container">
+  <h1><span class="marvel">Marvel</span> Mutant Teams</h1>
+
+  <input id="original" type="radio" name="team" checked>
+  <label for="original">Original X-Men</label>
+
+  <input id="force" type="radio" name="team">
+  <label for="force">X-Force</label>
+
+  <input id="factor" type="radio" name="team">
+  <label for="factor">X-Factor</label>
+
+  <input id="hellfire" type="radio" name="team">
+  <label for="hellfire">Hellfire Club</label>
+  
+  <br>
+  <ul class="characters">
+    <li id="angel" data-teams="original force factor hellfire">
+      <h2>Angel</h2>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/ct-angel.png" alt="">
+    </li>
+    <li id="beast" data-teams="original factor">
+      <h2>Beast</h2>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/ct-beast.png" alt="">
+    </li>
+    <li id="cyclops" data-teams="original force factor">
+      <h2>Cyclops</h2>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/ct-cyclops.png" alt="">
+    </li>
+    <li id="emma-frost" data-teams="hellfire">
+      <h2>Emma Frost</h2>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/ct-emma-frost.png" alt="">
+    </li>
+    <li id="iceman" data-teams="original factor">
+      <h2>Iceman</h2>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/ct-iceman.png" alt="">
+    </li>
+    <li id="jean-grey" data-teams="original factor">
+      <h2>Jean Grey</h2>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/ct-jean-grey.png" alt="">
+    </li>
+    <li id="magneto" data-teams="hellfire">
+      <h2>Magneto</h2>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/ct-magneto.png" alt="">
+    </li>
+    <li id="nightcrawler" data-teams="force">
+      <h2>Nightcrawler</h2>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/ct-nightcrawler.png" alt="">
+    </li>
+    <li id="professor-x" data-teams="original">
+      <h2>Professor X</h2>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/ct-professor-x.png" alt="">
+    </li>
+    <li id="psylocke" data-teams="force hellfire">
+      <h2>Psylocke</h2>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/ct-psylocke.png" alt="">
+    </li>
+    <li id="quicksilver" data-teams="factor">
+      <h2>Quicksilver</h2>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/ct-quicksilver.png" alt="">
+    </li>
+    <li id="rictor" data-teams="force factor">
+      <h2>Rictor</h2>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/ct-rictor.png" alt="">
+    </li>
+    <li id="storm" data-teams="force hellfire">
+      <h2>Storm</h2>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/ct-storm.png" alt="">
+    </li>
+    <li id="sunspot" data-teams="force hellfire">
+      <h2>Sunspot</h2>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/ct-sunspot.png" alt="">
+    </li>
+    <li id="tithe" data-teams="hellfire">
+      <h2>Tithe</h2>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/ct-tithe.png" alt="">
+    </li>
+    <li id="wolverine" data-teams="force">
+      <h2>Wolverine</h2>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/77020/ct-wolverine.png" alt="">
+    </li>
+  </ul>
+</div>
+         <section>
+    <label class="top-label">How did you hear about us?</label>
+    
+    <input id="how-friend" name="how" type="radio">
+    <label for="how-friend" class="side-label">From a friend</label>
+
+    <input id="how-internet" name="how" type="radio">
+    <label for="how-internet" class="side-label">Somewhere on the internet</label>
+
+    <input id="how-other" name="how" type="radio">
+    <label for="how-other" class="side-label">Other...</label>
+    
+    <div class="how-other-disclosure">
+      <label for="how-other-explain" class="top-label">Please explain</label>
+      <textarea id="how-other-explain"></textarea>
+    </div>
+  </section>
+  <section>
+    <input id="permitted" type="checkbox">
+    <label for="permitted" class="side-label">I am legally permitted to submit forms</label>
+    <div class="blocked">(you have to check the checkbox to continue)</div>
+    <button>Submit</button>
+  </section>
+</div>

@@ -1,0 +1,283 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #fff;
+  background-color: #444;
+  font: 0/1 'Oswald', sans-serif;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px 5px;
+}
+
+h1 {
+  margin: 0 5px 15px;
+  font-size: 45px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-shadow: 0 0 20px #000;
+}
+
+.marvel {
+  color: #c00;
+}
+
+input {
+  position: absolute;
+  left: -9999px;
+}
+
+label {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  margin: 5px;
+  padding: 10px 10px 10px 38px;
+  background-color: #000;
+  font-size: 18px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+label::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #fff;
+  background-color: #444;
+}
+
+input:focus + label {
+  outline: 1px solid #fff;
+}
+
+input:checked + label::before {
+  background-color: #c00;
+}
+
+/* width is controlled here and in media queries to ensure that there's always an even number of columns (prevents orphans) */
+.characters {
+  display: inline-block;
+  width: 240px;
+  list-style-type: none;
+  margin: 15px -5px 0;
+  padding: 0;
+}
+
+.characters li {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.characters h2 {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 70px;
+  left: 0px;
+  right: 0px;
+  margin: 0;
+  padding: 4px;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #000;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.characters img {
+  width: 100px;
+  height: 100px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 20px #000;
+  opacity: .25;
+  transform: scale(.5);
+}
+
+#original:checked ~ .characters [data-teams~="original"] h2,
+#force:checked ~ .characters [data-teams~="force"] h2,
+#factor:checked ~ .characters [data-teams~="factor"] h2,
+#hellfire:checked ~ .characters [data-teams~="hellfire"] h2 {
+  display: block;
+}
+
+#original:checked ~ .characters [data-teams~="original"] img,
+#force:checked ~ .characters [data-teams~="force"] img,
+#factor:checked ~ .characters [data-teams~="factor"] img,
+#hellfire:checked ~ .characters [data-teams~="hellfire"] img {
+  animation: avatar .3s forwards;
+}
+
+
+section {
+  margin-top: 30px;
+}
+
+section::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.top-label {
+  display: block;
+  margin: 10px 0;
+}
+
+input[type="email"], textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 5px;
+  border: none;
+  color: #593e4e;
+  background-color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+  appearance: none;
+}
+
+input[type="email"]:focus, textarea:focus, button:focus {
+  outline: 2px solid #9ab593;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.side-label {
+  display: block;
+  position: relative;
+  margin: 10px 0;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+.side-label::before, .side-label::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+input[type="radio"] + .side-label::before,
+input[type="radio"] + .side-label::after {
+  border-radius: 50%;
+}
+
+.side-label::before {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;  
+}
+
+input:focus + .side-label::before {
+  border-color: #9ab593;
+}
+
+.side-label::after {
+  display: none;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  background-color: #9ab593;
+}
+
+input:checked + .side-label::after {
+  display: block;
+}
+
+.how-other-disclosure {
+  display: none;
+  margin: 10px 0 0 35px;
+}
+
+#how-other:checked ~ .how-other-disclosure {
+  display: block;
+}
+
+.blocked {
+  margin-top: 40px;
+  color: rgba(255, 255, 255, .3);
+  text-align: center;
+}
+
+button {
+  display: none;
+  appearance: none;
+  margin: 40px auto 0;
+  padding: 5px 40px;
+  border: 2px solid #fff;
+  color: rgba(0, 0, 0, .8);
+  background-color: #9ab593;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#permitted:checked ~ .blocked {
+  display: none;
+}
+
+#permitted:checked ~ button {
+  display: block;
+}
+
+
+/* fade in and expand image to full size, with a slight bounce */
+@keyframes avatar {
+  70% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .characters {
+    width: 480px;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  .characters {
+    width: 720px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .characters {
+    width: 960px;
+  }
+}
