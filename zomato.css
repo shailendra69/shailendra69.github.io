@@ -631,7 +631,7 @@ body {
 
     background-image: url("images/flag-india.jpg");
 }
-/*
+
 @media (max-width: 700px) {
   
   .title img {
@@ -641,22 +641,52 @@ body {
 
   .tagline {
    
-    font-size: 20px;
+    font-size: 70px;
   
   }
-  .navigation {
+  .navigation a {
 
     width: 90%;
+    font-size: 60px;
   }
    .flex-container {
 
-    width: 100%;
-    height: 100%;
-   }
-   .container {
-
-    width: 100%;
+    width: 342%;
+  
    }
 
+   .location {
+    width: 100%;
+    font-size: 50px;
+   }
+   .pics {
+    width: 100%;
+   }
+   .food-shop a {
+
+    font-size: 40px;
+   }
+   .flex-box {
+
+    font-size: 40px;
+    padding: 40px;
+    width: 870px;
+   }
+.ending {
+  display: flex;
+}
+.ending p{
+
+  font-size: 40px;
+}
+  .ending  span {
+
+    font-size: 40px;
+  }
+   .mobile {
+    padding-left: 140%;
+    font-size: 40px;
+    width: 50%;
+   }
 
 }

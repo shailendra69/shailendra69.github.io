@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+}
+
+.javascript {
+
+	font-family: sans-serif;
+	font-size: 25px;
+	color: red;
+	padding: 10px;
+}
+
+.Variables {
+
+    font-family: sans-serif;
+	font-size: 25px;
+	color: deepskyblue;
+	padding: 10px;	
+}
+
+.Numbers {
+
+    font-family: sans-serif;
+	font-size: 25px;
+	color: black;
+	padding: 10px;		
+}
+
+.data-types {
+
+   font-family: sans-serif;
+	font-size: 25px;
+	color: orange;
+	padding: 10px;			
+}
+
+.loop {
+
+	font-family: sans-serif;
+	font-size: 25px;
+	color: indigo;
+	padding: 10px;		
+}

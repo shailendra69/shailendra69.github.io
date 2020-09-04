@@ -1,118 +1,59 @@
 body {
 	margin: 0;
-	background-color: black;
+
 	height: 100%;
     opacity: 0.95;
 }
-
-.heading {
-
-	margin-top: 60px;
-	margin-left: 40px;
-	margin-right: 40px;
-	height: 115px;
-	background-color: white;
-	display: flex;
-	justify-content: center;
-}
-
-.flex-box {
-    
+header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
 
-    width: 100%;
-	height: 60px;
-	box-shadow: 0 1px lightgray;
-	background-color: #fff;
-	padding-left: 100px;
-	border: 1px solid lightgray;
+    box-shadow: 0px 0px 5px 0px rgb(238, 235, 235);
+    margin-bottom: 40px;
+    font-family: "raleway", sans-serif;
 }
 
-.flex-box img {
-
-	width: 40px;
-	height: 40px;
-	padding-top: 10px;
-	
-}
-
-.tags h1 {
-
-	font-size: 25px;
-	color: darkcyan;
-	font-family: sans-serif;
-}
-
-.tags {
-
-	display: flex;
-	font-size: 20px;
-	font-family: sans-serif;
-	color: red;
-	justify-content: space-between;
-
-}
-
-.tags p {
-
-	display: flex;
-	padding-top: 18px;
-	font-size: 17px;
-	font-family: sans-serif;
-	color: red;
-}
-
-.notification {
-
-	padding-left: 600px;
-	padding-top: 20px;
-	font-size: large;
-}
-
-.notification h1 {
-
-	display: contents;
-	margin: 0;
-	color: red;
-	font-size: 25px;
-	font-family: sans-serif;
-}
-
-.icon {
-
+.logo {
     display: flex;
-	padding-left: 70px;
-	padding-top: 25px;
-	font-size: larger;
+    margin-left: 230px;
+}
+.company-name {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 5px;
+}
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+}
+.subtitle {
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
 }
 
-.icon h3 {
-
-	font-size: 23px;
-	margin: 0;
-	padding-left: 10px;
-	color: black;
-	opacity: 0.9;
-	font-family: sans-serif;
+.user {
+    display: flex;
+    margin-right: 230px;
 }
-
-.fa {
-
-	display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    padding-left: 5px;
-    padding-top: 4px;
-    -webkit-font-smoothing: antialiased;
-    
+.bell {
+    margin-right: 20px;
+    font-size: 18px;
 }
-
-.border-box {
-
-	border-radius: 50px solid black;
+.user-details {
+    display: flex;
 }
-
+.user-icon {
+    font-size: 16px;
+    margin-right: 5px;
+}
+.user-name {
+    margin-right: 5px;
+}
 .main-container {
 
 	background-color: white;
@@ -273,4 +214,19 @@ body {
 .footer button:focus {
     background-color: #e0dede;
     outline-color: transparent;
+}
+
+@media (max-width: 500px) {
+
+    .main-container {
+
+        width: 100%;
+        height: auto;
+    }
+    .header {
+        width: 128%;
+    }
+    .fvu-table {
+        padding-top: 10px;
+    }
 }
