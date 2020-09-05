@@ -75,17 +75,17 @@ header {
     font-size: 14px;
     margin: 5px;
 }
-.resto-list p {
+.restaurent-list p {
     color: gray;
     font-size: 17px;
 }
-.resto-list {
+.restaurent-list {
     width: 100%;
 }
-.resto-list p {
+.restaurent-list p {
     margin-left: 2%;
 }
-.resto {
+.restaurent {
     display: flex;
     width: 100%;
     padding: 10px;
@@ -93,20 +93,20 @@ header {
     margin-bottom: 10px;
     box-shadow: 0 2px lightgray;
 }
-.resto-img img {
+.restaurent-img img {
     width: 100px;
     height: 100px;
     
     object-fit: cover;
 }
-.resto-details {
+.restaurent-details {
     display: flex;
     flex-direction: column;
     justify-content: left;
     margin: 10px;
     line-height: 20px;
 }
-.resto-name {
+.restaurent-name {
     color: #33373d;
     font-size: 17px;
     font-weight: bold;

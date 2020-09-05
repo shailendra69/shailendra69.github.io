@@ -18,6 +18,15 @@ body {
 	padding: 10px;	
 }
 
+.Operators {
+  
+    font-family: sans-serif;
+	font-size: 25px;
+	color: green;
+	padding: 10px;	  
+  
+}
+
 .Numbers {
 
     font-family: sans-serif;
