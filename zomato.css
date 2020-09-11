@@ -408,6 +408,101 @@ body {
     font-size: 13px;
 }
 
+  .get-app {
+      background: #faf2f3;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    padding-bottom: 20px;
+  }
+  .get-app-description {
+      margin-left: 100px;
+      margin-top: 50px;
+  }
+  .get-app-description h1 {
+    color:rgb(28, 28, 28);
+      font-size: 35px;
+  }
+  .get-app-description p {padding-top:40px;
+     color: rgb(54, 54, 54);
+      font-size: 17px;
+  }
+  .radio-button {margin-top: 25px;
+      color: pink;
+  }
+  .input-button { display: flex;
+    margin-top: 30px;
+  }
+
+.custom-radio {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid gray;
+    border-radius: 100%;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    background-color: white;
+}
+input:checked ~ .custom-radio::before {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 11px;
+    background-color: green;
+    border-radius: 100%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+.custom-box {
+    position: relative;
+}
+input:checked ~ .custom-radio{
+    display: block;
+    width: 16px;
+    height: 15px;
+    border: 1px solid green;
+    border-radius: 100%;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    background-color: white;
+  }
+
+  .textbox {
+      height: 50px;
+      width: 250px;
+      border: 0.1rem solid rgb(207, 207, 207);
+      border-radius: 10px;
+      padding-left: 10px;
+  }
+  .app-button {
+      height: 50px;
+      width: 126px;
+      border: none;
+      background: rgb(204, 29, 29);
+      color: white;
+      border-radius: 10px;
+  }
+  .download {
+    color: rgb(156, 156, 156);
+    font-size: 10px;
+  }
+  .store button {
+      margin-top: 20px;
+      color: white;
+      background: #203a4f;
+      height: 50px;
+      width: 150px;
+      border: none;
+      border-radius: 10px;
+  }
+  .store button span {
+      font-size: 10px;
+  }
+
 .store {
     color: gray;
     font-family: sans-serif;
