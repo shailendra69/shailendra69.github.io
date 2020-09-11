@@ -1,10 +1,10 @@
 body {
 	margin: 0;
-
 	height: 100%;
     opacity: 0.95;
 }
 header {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,52 +16,77 @@ header {
 }
 
 .logo {
+
     display: flex;
     margin-left: 230px;
 }
+
 .company-name {
+
     display: flex;
     flex-direction: column;
     margin: auto;
     margin-left: 5px;
+
 }
+
 .title {
+
     font-size: 16px;
     font-weight: bold;
     color: green;
+
 }
+
 .subtitle {
+
     font-size: 12px;
     font-weight: bold;
     color: red;
+
 }
 
 .user {
+
     display: flex;
     margin-right: 230px;
 }
+
 .bell {
+
     margin-right: 20px;
     font-size: 18px;
 }
+
 .user-details {
+
     display: flex;
 }
+
 .user-icon {
+
     font-size: 16px;
     margin-right: 5px;
 }
+
 .user-name {
+
     margin-right: 5px;
 }
-.main-container {
 
+.main-container {
+    
+    border: 1px solid;
 	background-color: white;
 	width: auto;
 	margin-left: 40px;
 	margin-right: 40px;
 }
+
 .header {
+
+
+    font-size: 25px;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -70,13 +95,11 @@ header {
     align-items: center;
     background-color: #f5f5f5;
     border: 1px solid lightgray;
-    /*border-radius: 15px 15px 0 0; */
     margin-bottom: 40px;
 }
-.challan,
-.tds,
-.fvu,
-.etds {
+
+.challan,.tds,.fvu,.etds {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,18 +110,22 @@ header {
 }
 
 .challan:hover {
+    
     background-color: #e0dede;
 }
 
 .tds:hover {
+    
     background-color: #e0dede;
 }
 
 .fvu:hover {
+    
     background-color: #e0dede;
 }
 
 .etds:hover {
+
     background-color: #e0dede;
 }
 
@@ -119,13 +146,16 @@ header {
 } 
 
 .header a {
+
     text-decoration: none;
     margin-left: 10px;
     color: blue;
     font-weight: bold;
 }
 
+
 .fvu-table {
+
     font-family: "lato", sans-serif;
     font-size: 18px;
     padding-left: 50px;
@@ -135,7 +165,11 @@ header {
 }
 
 .fvu-table table {
+   
+    font-size: 18px;
     border-collapse: collapse;
+   
+    border: 1px solid gray;
     background-color: #fbfbfb;
     text-align: center;
     align-self: center;
@@ -144,14 +178,17 @@ header {
     margin-left: auto;
     margin-right: auto;
     font-family: "lato", sans-serif;
-    font-size: 12px;
+
 }
 
 .error {
+
     color: rgb(189, 25, 25);
+
 }
 
 .sw-warning {
+
     color: orange;
 }
 
@@ -165,21 +202,25 @@ header {
 }
 
 .fvu-table tr {
+
     border-bottom: 1px dotted cornflowerblue;
 }
 
 .fvu-table td {
+
     border-right: 1px solid cornflowerblue;
     padding: 10px 30px 10px 30px;
     padding: 10px 28px 10px 28px;
 }
 
 .fvu-table tr:last-child {
+
     border-bottom: 0;
     border-right: 0;
 }
 
 .fvu-table table {
+
     border-collapse: collapse;
     background-color: #fbfbfb;
     text-align: center;
@@ -188,18 +229,21 @@ header {
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 .footer {
+
     display: flex;
     justify-content: flex-end;
     margin-bottom: 20px;
 }
 
 .footer button {
+
     justify-self: center;
     height: 40px;
+    font-size: 20px;
     margin-left: 5px;
     border: none;
     background-color: #fbfbfb;
@@ -207,11 +251,13 @@ header {
 
 
 .footer #validate {
+
 	background-color: rgb(170, 170, 170);
 	margin: 5;
 }
 
 .footer button:focus {
+
     background-color: #e0dede;
     outline-color: transparent;
 }
@@ -223,9 +269,11 @@ header {
         width: 100%;
         height: auto;
     }
+
     .header {
         width: 128%;
     }
+
     .fvu-table {
         padding-top: 10px;
     }
