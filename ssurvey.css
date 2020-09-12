@@ -37,7 +37,7 @@ body {
     border-radius: 5px;
     margin-top: 30px;
     width: 50%;
-    height: 84rem;
+    height: 95rem;
     margin-left: 23rem;
 }
 
@@ -79,7 +79,7 @@ section {
 }
 
 input:checked~.beautyfy-radio {
-    border: 2px solid red;
+    border: 2px solid violet;
     position: absolute;
     top: 0px;
     left: -2px;
@@ -89,7 +89,7 @@ input:checked~.beautyfy-radio:after {
     content: "";
     width: 8px;
     height: 8px;
-    background-color: red;
+    background-color: violet;
     display: block;
     border-radius: 50%;
     position: absolute;
@@ -152,7 +152,7 @@ label .font-end-projects {
 }
 
 input:checked~.custom-checkbox {
-    border: 2px solid red;
+    border: 2px solid violet;
     position: absolute;
     top: 0px;
 }
@@ -165,7 +165,7 @@ input:checked~.custom-checkbox:after {
     position: absolute;
     top: -5px;
     left: 0px;
-    color: orangered;
+    color: violet;
 }
 
 .box {
