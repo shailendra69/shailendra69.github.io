@@ -79,7 +79,7 @@ section {
 }
 
 input:checked~.beautyfy-radio {
-    border: 2px solid violet;
+    border: 2px solid #09A7A1;
     position: absolute;
     top: 0px;
     left: -2px;
@@ -89,7 +89,7 @@ input:checked~.beautyfy-radio:after {
     content: "";
     width: 8px;
     height: 8px;
-    background-color: violet;
+    background-color:#09A7A1;
     display: block;
     border-radius: 50%;
     position: absolute;
@@ -152,7 +152,7 @@ label .font-end-projects {
 }
 
 input:checked~.custom-checkbox {
-    border: 2px solid violet;
+    border: 2px solid #09A7A1;
     position: absolute;
     top: 0px;
 }
@@ -165,7 +165,7 @@ input:checked~.custom-checkbox:after {
     position: absolute;
     top: -5px;
     left: 0px;
-    color: violet;
+    color: #09A7A1;
 }
 
 .box {
