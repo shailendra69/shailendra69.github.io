@@ -1,5 +1,5 @@
 body {
-  background-color:#c33;
+  background-color:beige;
 }
 
 .frame {
@@ -22,18 +22,7 @@ body {
     position:absolute;
     width:60vmin;
   }
-  /*
-  .neck {
-    background-color:#b88;
-    border-radius:0 0 50% 50%;
-    bottom:3vmin;
-    box-sizing:border-box;
-    height:15vmin;
-    left:22.5vmin;
-    position:absolute;
-    width:25vmin;
-  }
-  */
+ 
   .head {
     background-color:bisque;
     border-radius:50%;
@@ -70,49 +59,6 @@ body {
       width:6vmin;
     }
 
-     /* .nose:before {
-        border:solid transparent;
-        border-bottom-color:#b88;
-        border-right-color:#b88;
-        border-width:4vmin 1vmin;
-        content:"";
-        height:0;
-        left:-2vmin;
-        position:absolute;
-        top:4vmin;
-        width:0;
-      }
-      .nose:after {
-        border:solid transparent;
-        border-bottom-color:#b88;
-        border-left-color:#b88;
-        border-width:4vmin 1vmin;
-        content:"";
-        height:0;    
-        position:absolute;
-        right:-2vmin;
-        top:4vmin;
-        width:0;
-      }*/
-    /*
-    .cheek {
-      background-color:#daa;
-      border-radius:50%;
-      height:4vmin;
-      position:absolute;
-      top:57%;
-      width:6vmin;
-      }
-      .cheek.left { 
-        border-top-left-radius:20%;
-        left:3vmin;
-        transform:rotate(15deg);
-      }
-      .cheek.right {
-        border-top-right-radius:20%;
-        right:3vmin;
-        transform:rotate(-15deg);
-      }
     */
     .mouth {
      /* background-color:#600;*/
@@ -125,7 +71,9 @@ body {
       overflow:hidden;
       position:absolute;
       width:8vmin;
-    }  .teeth {
+    } 
+
+     .teeth {
         background-color:#ffc;
         height:.5vmin;
         width:8vmin;
@@ -139,6 +87,7 @@ body {
       top:-2vmin;
       width:35vmin;
       }
+    
       .hair:before {
         background-image:repeating-linear-gradient(60deg,black,black 2vmin, black 2vmin, black 3vmin);
         border-radius:0 50% 20% 20%;
@@ -159,16 +108,7 @@ body {
       position:absolute;
       width:36vmin;
      }
-      /*.beard:after {
-        background-color:#310;
-        border-radius:0 0 50% 50%;
-        bottom:-7vmin;
-        content:"";
-        height:10vmin;
-        left:15vmin;
-        position:absolute;
-        width:5vmin;
-      }*/
+    
      .beard:before {
         border-radius:50%;
         border:solid 3vmin #310;
@@ -187,32 +127,57 @@ body {
       height:2vmin;
       position:absolute;
       top:45%;
-      width:10vmin;
-     } .eyebrow.left {
+      width:8vmin;
+     }
+      .eyebrow.left {
         border-bottom-left-radius:100%;
         left:5vmin;
         transform:rotateX(165deg);
       }
+     
       .eyebrow.right {
         border-bottom-right-radius:100%;
         right:5vmin;
         transform:rotateX(165deg);
       }
-    /*
-    .eye-socket {
-      background-color:#b88;
-      border-radius:20% 20% 50% 50%;
-      height:5vmin;
-      position:absolute;
-      top:50%;
-      width:10vmin;
-     } .eye-socket.left {
-        left:5vmin;
+
+      .glas {
+
+        position: absolute;
+        top: 46%;
+        background: black ;
+        border-radius: 2vmin;
+        height: 1vmin;
+        width: 9vmin;
+        left: -2vmin;
+        transform: rotateZ(45deg);
+        background: silver;
       }
-      .eye-socket.right {
-        right:5vmin;
+
+
+      .glas1 {
+
+        position: absolute;
+        top: 46%;
+        
+        border-radius: 2vmin;
+        height: 1vmin;
+        width: 8vmin;
+        left: 28vmin;
+        transform: rotateZ(-45deg);
+        background: silver;
       }
-    */
+      .glas2 {
+
+        position: absolute;
+        top: 51%;
+        height: 1vmin;
+        width: 9vmin;
+        left: 13vmin;
+        
+        background: silver;
+      }
+    
     .eye {
       background-color:#fff;
       border-radius:50%;
@@ -228,10 +193,257 @@ body {
         right:7vmin;
       }
       .pupil {
-        background-color:#630;
+        background-color:silver;
+        position: absolute;
+        left: 2vmin;
         border-radius:2vmin;
         height:2.5vmin;
         width:2.5vmin;
       }
 
+     .glasses {
+        position: absolute;
+        top: 49%;
+        left: 5vmin;
+        background-color:silver;
+        border-radius:2vmin;
+        height:5.5vmin;
+        width:8.5vmin;
+     } 
 
+      .l-hend {
+
+        position: absolute;
+        top: 75%;
+        left: 130vmin;
+        background-color:indianred;
+        border-radius:3vmin;
+        height:10.5vmin;
+        width:8.5vmin;
+      }
+
+    .R-hend {
+
+        position: absolute;
+        top: 75%;
+        left: 186vmin;
+        background-color:indianred;
+        border-radius:3vmin;
+        height:10.5vmin;
+        width:8.5vmin;
+      }
+    .cup {
+
+        position: absolute;
+        top: 80%;
+        left: 90vmin;
+        background-color:coral;
+        border-radius:2vmin;
+        height:9.5vmin;
+        width:8.5vmin;
+      }
+        
+    .cup1 {
+
+    position: absolute;
+    top: 81%;
+    left: 95vmin;
+    border-radius: 50vmin;
+    border: 2px solid coral;
+    height:4vmin;
+    width: 5vmin;
+  }
+
+  .round {
+
+    position: absolute;
+    top: 41%;
+    background: aquamarine;
+    left: 195vmin;
+    border: 2px darkgray;
+    height: 6vmin;
+    width: 6vmin;
+    border-radius: 100%;
+  }
+ .round1 {
+
+    position: absolute;
+    top: 48%;
+    background: darkcyan;
+    left: 190vmin;
+    border: 2px darkgray;
+    height: 6vmin;
+    width: 6vmin;
+    border-radius: 100%;
+  }
+
+  .round2 {
+
+    position: absolute;
+    top: 41%;
+    background: orange;
+    left: 185vmin;
+    border: 2px darkgray;
+    height: 6vmin;
+    width: 6vmin;
+    border-radius: 100%;
+  }
+
+
+  .round3 {
+
+    position: absolute;
+    top: 81%;
+    background: oldlace;
+    left: 23vmin;
+    border: 2px darkgray;
+    height: 6vmin;
+    width: 6vmin;
+    border-radius: 100%;
+  }
+
+  .round4 {
+
+    position: absolute;
+    top: 84%;
+    background: purple;
+    left: 45vmin;
+    border: 2px darkgray;
+    height: 6vmin;
+    width: 4vmin;
+    border-radius: 100%;
+  }
+
+   .glasses1 {
+        position: absolute;
+        top: 49%;
+        left: 21vmin;
+        background-color:silver;
+        border-radius:2vmin;
+        height:5.5vmin;
+        width:8.5vmin;
+      }
+
+   .laptop {
+    
+    position: absolute;
+    background: silver;
+    left: 50px;
+    top: 73%;
+    border: 4px solid gray;
+    border-radius: 10%;
+    height: 19vmin;
+    width: 48vmin;
+   }
+
+   .border {
+
+    position: absolute;
+    top: 99%;
+    border: 4px solid gray;
+    height:0vmin;
+    width: 70vmin;
+   }
+  
+  .border1 {
+
+    position: absolute;
+    top: 89%;
+    left: 84vmin;
+    border: 2px solid gray;
+    height:0vmin;
+    width: 30vmin;
+   }
+
+
+  .border2 {
+
+    position: absolute;
+    top: 25%;
+    left: 155vmin;
+    border: 2px solid gray;
+    height:0vmin;
+    width: 57vmin;
+   }
+
+.border3 {
+
+    position: absolute;
+    top: 25%;
+    left: 105vmin;
+    border: 2px solid gray;
+    height:0vmin;
+    width: 57vmin;
+   }
+
+.border4 {
+
+    position: absolute;
+    top: 50%;
+    transform: rotateZ(90deg);
+    left: 81vmin;
+    border: 2px solid gray;
+    height:0vmin;
+    width: 49vmin;
+   }
+
+.border5 {
+
+    position: absolute;
+    top: 50%;
+    transform: rotateZ(90deg);
+    left: 188vmin;
+    border: 2px solid gray;
+    height:0vmin;
+    width: 49vmin;
+   }
+
+   .border6 {
+
+    position: absolute;
+    top: 75%;
+    left: 105vmin;
+    border: 2px solid gray;
+    height:0vmin;
+    width: 107vmin;
+   }
+.border7 {
+
+    position: absolute;
+    top: 89%;
+    left: 201vmin;
+    border: 2px solid gray;
+    height:0vmin;
+    width: 38vmin;
+   }
+   .border8 {
+
+    position: absolute;
+    top: 85%;
+    left: 206vmin;
+    background: darkcyan;
+    border: 2px solid gray;
+    height:3vmin;
+    width: 25vmin;
+   }
+   .border9 {
+
+    position: absolute;
+    top: 81%;
+    left: 215vmin;
+    background: orange;
+    border: 2px solid gray;
+    height:3vmin;
+    width: 20vmin;
+   }
+   .border10 {
+
+    position: absolute;
+    top: 77%;
+    left: 210vmin;
+    background: cyan;
+    border: 2px solid gray;
+    height:3vmin;
+    width: 20vmin;
+   }
+   
