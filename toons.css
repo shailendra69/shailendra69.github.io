@@ -349,7 +349,7 @@ body {
 
     position: absolute;
     top: 89%;
-    left: 84vmin;
+    left: 284px;
     border: 2px solid gray;
     height:0vmin;
     width: 30vmin;
@@ -360,7 +360,7 @@ body {
 
     position: absolute;
     top: 25%;
-    left: 155vmin;
+    left: 455px;
     border: 2px solid gray;
     height:0vmin;
     width: 57vmin;
@@ -370,7 +370,7 @@ body {
 
     position: absolute;
     top: 25%;
-    left: 105vmin;
+    left: 436px;
     border: 2px solid gray;
     height:0vmin;
     width: 57vmin;
@@ -381,7 +381,7 @@ body {
     position: absolute;
     top: 50%;
     transform: rotateZ(90deg);
-    left: 81vmin;
+    left: 181px;
     border: 2px solid gray;
     height:0vmin;
     width: 49vmin;
@@ -392,7 +392,7 @@ body {
     position: absolute;
     top: 50%;
     transform: rotateZ(90deg);
-    left: 188vmin;
+    left: 488px;
     border: 2px solid gray;
     height:0vmin;
     width: 49vmin;

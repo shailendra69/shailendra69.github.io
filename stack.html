@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stack OverFlow Clone</title>
+        <link style="text/css" rel="stylesheet" href="stack.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="menu"><i class="fa fa-bars"></i></div>
+            <div class="logo">
+                <a href="https://stackoverflow.com/"><img src="images/logo.png" /></a>
+            </div>
+            <nav>
+                <a href=""><button type="button"  class="about" value="about" id="about">About</button></a></div>
+                <a href=""><button type="button"  class="products" value="products" id="products">Products</button></a></div>
+                <a href=""><button type="button"  class="teams" value="teams" id="teams">For Teams</button></a></div>
+            </nav>
+            <div class="search-container">
+                <i class="fa fa-search"></i><input type="text" name="search1" id="search1" placeholder="Search..." />
+            </div>
+            <div class="login-wrap">
+                <a href="">
+                    <button type="button" class="login" value="login" id="login">Log in</button>
+                </a>
+            </div>
+            <div class="signup-wrap">
+                <a href="">
+                    <button type="button" class="signup" value="signup" id="signup">Sign up</button>
+                </a>
+            </div>
+        </header>
+
+        <section class="main-banner">
+            <div class="title-container">
+                <div class="title">
+                   <h1> We <span class=font-mono>&lt;3</span> people who code </h1>
+                </div>
+                <div class="subtitle">
+                    <h2>We build products that empower developers and 
+                        connect them to solutions that enable productivity, growth, and discovery.
+                    </h2>
+                </div>
+                <div class="category-container">
+                    <a href="">
+                        <div class="developer">
+                        For developers</div></a>
+                    
+                    <a href="">
+                        <div class="businesses">
+                        For businesses</div></a>                    
+                </div>
+            </div>
+        </section>
+
+        <section class="main-container">
+            <div class="for-developers">
+                <div class="developer-title">For developers, by developers</div>
+                <div class="seperator"></div>
+                <div class="developer-details"><p>Stack Overflow is an <span><a href="">open community</a></span> for anyone that codes. 
+                    We help you get answers to your toughest coding questions, 
+                    share knowledge with your coworkers in private, and find your next dream job.</p></div>
+            </div>
+            <div class="banner-container">
+                <div class="banner publicQA">
+                    <img src="https://cdn.sstatic.net/Img/home/public-qa.svg" />
+                    <h3>Public Q&A</h3>
+                    <p>Get answers to more than 16.5 million questions and give back by sharing your knowledge with others. 
+                        Sign up for an account.
+                    </p>
+                    <button type="button" value="browse-question" id="browse-question">Browse Question</button>
+                </div>
+                <div class="banner privateQA">
+                    <img src="https://cdn.sstatic.net/Img/home/private-qa.svg" />
+                    <h3>Private Q&A</h3>
+                    <p>Level up with Stack Overflow while you work. 
+                        Share knowledge privately with your coworkers using our flagship Q&A engine.</p>
+                    <button type="button" value="try-free" id="try-free">Try for free</button>
+                </div>
+                <div class="banner browse-jobs">
+                    <img src="https://cdn.sstatic.net/Img/home/jobs.svg" />
+                    <h3>Browse Jobs</h3>
+                    <p>Find the right job through high quality listings and search for roles based on 
+                        title, technology stack, salary, location, and more.</p>
+                    <button type="button" value="browse-job" id="browse-jon">Find a job</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="business-container">
+            <div class="for-business">
+                <div class="business-title">For businesses, by developers</div>
+                <div class="seperator"></div>
+                <div class="business-details"><p>Our mission is to help developers write the script of the future. This means helping you find and hire 
+                    skilled developers for your business and providing them the tools they need to share knowledge and work effectively.</p></div>
+                    
+                </div>
+            <div class="business-banner-container">
+                <div class="business-banner">
+                    <img src="https://cdn.sstatic.net/Img/home/private-questions.svg" />
+                    <p>Quickly find and share internal knowledge with <a href="">Private Q&A</a>
+                    </p>
+                </div>
+                <div class="business-banner">
+                    <img src="https://cdn.sstatic.net/Img/home/find-candidate.svg" />
+                    <p>Find the perfect candidate for your growing technical team with <a href="">Talent solutions</a>
+                    </p>
+                </div>
+                <div class="business-banner">
+                    <img src="https://cdn.sstatic.net/Img/home/accelerate.svg" />
+                    <p>Accelerate the discovery of your products or services through our <a href="">Advertising platform</a>
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="teams-container">
+            <div class="for-teams">
+                <div class="teams-title">Unlock siloed knowledge with Stack Overflow for Teams</div>
+                <div class="teams-details"><p>Wikis, chat messages, or formal documentation for knowledge management aren’t effective. Our question and 
+                    answer format is a proven approach for accessing the right information in less time</p></div>
+                 <button type="button" value="learn-more-btn" id="learn-more-btn">Learn more</button>
+            </div>
+            <div class="teams-banner-container">
+                <div class="teams-banner teams-basic">
+                    <div class="basic">Basic</div>
+                    <div>
+                        <p class="basic-line1">Private knowledge base for teams</p>
+                        <p class="basic-line2">$6 USD</p>
+                        <p class="basic-line3">  per teammate / month</p>
+                    </div>
+                    <div> <hr></div>
+                    <div>
+                        <p class="basic-line4"><i class='fa fa-calendar'></i>Free 30 day trial</p>
+                        <p class="basic-line5"><i class='fa fa-shield'></i>Your own private space hosted on stackoverflow.com</p>
+                        <p class="basic-line6"><i class='fa fa-archive'></i>Fully searchable archive</p>
+                    </div>
+                    <div class="teams-banner-btn">
+                        <button type="button" value="teams-basic-btn" id="teams-basic-btn">Browse Question</button>
+                    </div>                  
+                </div>
+
+                <div class="teams-banner teams-business">
+                    <div class="Business">Business</div>                    
+                    <p class="business-line1">Private knowledge base with SSO and premium features
+                    </p>
+                    <p class="business-line2">$12 USD</p>
+                    <p class="business-line3">per teammate / month</p>
+                    <div>  <hr></div>
+                    <p class="business-line4"><i class='fa fa-key'></i>Single sign-on (SSO) with SAML</p>
+                    <p class="business-line5"><i class='fa fa-bar-chart'></i>Reporting and analytics</p>
+                    <p class="business-line6"><i class='fa fa-shield'></i>Priority customer support</p>
+                    <p class="business-line7"><i class='fa fa-star'></i>99.5% uptime</p>
+                    <p class="business-line8"><i class='fa fa-plus'></i>All the features of Basic tier</p>
+                    <div class="teams-banner-btn">
+                        <button type="button" value="teams-business-btn" id="teams-business-btn">Browse Question</button>
+                    </div>
+                </div>
+                
+                <div class="teams-banner teams-enterprise">
+                    <div class="Enterprise">Enterprise</div>                    
+                    <p class="Enterprise-line1">Standalone knowledge base with enhanced security and flexible hosting
+                    </p>
+                    <p class="Enterprise-line2">Custom pricing</p>
+                    <p class="Enterprise-line3">Let’s talk about what you need</p>
+                    <div>  <hr></div>
+                    <p class="Enterprise-line4"><i class='fa fa-key'></i>Single sign-on with AD or SAML</p>
+                    <p class="Enterprise-line5"><i class='fa fa-cloud'></i>Host on your cloud or servers – or our private managed cloud</p>
+                    <p class="Enterprise-line6"><i class='fa fa-code'></i>Robust read and write API</p>
+                    <p class="Enterprise-line7"><i class='fa fa-user'></i>Your own customer success and community building representative</p>
+                    <p class="Enterprise-line8"><i class='fa fa-star'></i>99.5% uptime SLA and priority support</p>
+                    <div class="teams-banner-btn">
+                        <button type="button" value="teams-enterprise-btn" id="teams-enterprise-btn">Browse Question</button>
+                    </div>
+                </div>               
+            </div>
+            <div class="teams-footer">
+                <a href=""> <div class="leader"><img src="https://cdn.sstatic.net/Img/product/teams/endorsements/g2.svg"/> 
+                    <strong>Leader</strong> Summer 2020 </div></a>
+                    <a href=""><div class="users-love"> <img src="https://cdn.sstatic.net/Img/product/teams/endorsements/g2.svg"/> 
+                    <strong>Users love Us</strong>  </div></a>
+                    <a href=""><div class="innovative-companies">
+                     <img src="https://cdn.sstatic.net/Img/product/teams/endorsements/fastco.svg"/> 
+                        <strong>Most Innovative Companies</strong> 2019 
+                </div></a>
+            </div>
+           
+        </section>
+
+        <section class="hire-reach-container">
+            <div class="hire-container">
+                <div class="hire-logo">
+                    <img src="https://cdn.sstatic.net/Img/home/find-candidate.svg" />
+                </div>
+                <div class="hire-title">Hire your technical talent</div>
+                <div class="hire-details">We help expand your technical hiring strategy to promote your employer brand and 
+                    highlight relevant open roles to our community of 50 million monthly visitors.</div>
+                <div class="hire-btn">
+                    <button type="button" value="talent" id="talent">Stack Overflow Talent</button>
+                </div>
+            </div>
+            <div class="reach-container">
+                <div class="reach-logo">
+                    <img src="https://cdn.sstatic.net/Img/home/accelerate.svg" />
+                </div>
+                <div class="reach-title">Reach developers worldwide</div>
+                <div class="reach-details">Use the world’s largest resource for people who code to help you increase awareness and 
+                    showcase your product or service across Stack Overflow’s network of Q&A sites.</div>
+                <div class="reach-btn">
+                    <button type="button" value="advertising" id="advertising">Stack Overflow Advertising</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="question-answers-container">
+            <div class="qa-title">Questions are everywhere, answers are on Stack Overflow</div>
+            <div class="animation-container">
+                <div class="left-animation">
+                    <div class="animate-left">
+                        <img src="https://cdn.sstatic.net/Img/home/ask-a-question.svg" />
+                        <p>Ask a question</p>
+                        <p class="arrow">&gt;</p>
+                    </div>
+                    <div class="animate-left">
+                        <img src="https://cdn.sstatic.net/Img/home/votes.svg" />
+                        <p>Vote on everything</p>
+                    </div>
+                    <div class="animate-left">
+                        <img src="https://cdn.sstatic.net/Img/home/answer.svg" />
+                        <p>Answer questions</p>
+                    </div>
+                </div>
+                <div class="middle-animation">
+                    <img src="https://cdn.sstatic.net/Img/home/illo-feats-ask.svg" />
+                </div>
+                <div class="right-animation">
+                    <div class="animate-right">
+                        <img src="https://cdn.sstatic.net/Img/home/tags.svg" />
+                        <p>Tag your question</p>
+                    </div>
+                    <div class="animate-right">
+                        <img src="https://cdn.sstatic.net/Img/home/accept.svg" />
+                        <p>Accept an answer</p>
+                    </div>
+                    <div class="animate-right">
+                        <img src="https://cdn.sstatic.net/Img/home/get-recognized.svg" />
+                        <p>Get recognized</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ask-question">Ask a question publicly on 170+ Stack Exchange sites or 
+                privately using Stack Overflow for Teams.</div>
+            <div class="create-account-btn">
+                <button type="button" value="account" id="account">Create an account</button>
+            </div>
+        </section>
+
+        <section class="learn-grow-container">
+            <div class="learn-grow-title">Learn and grow with Stack Overflow</div>
+            <div class="learn-banner-container">
+                <div class="learn-banner">
+                    <img src="https://cdn.sstatic.net/Img/home/developer.svg" />
+                    <p class="learn-banner-title">Write the script of the future</p>
+                    <p class="learn-banner-details">Get your coding questions answered to learn, build, and 
+                        level up whether you’re beginning with <a href="">JavaScript</a> or a 
+                        <a href="">React</a> professional. </p>
+                </div>
+                <div class="learn-banner">
+                    <img src="https://cdn.sstatic.net/Img/home/open-source.svg" />
+                    <p class="learn-banner-title">Support open source</p>
+                    <p class="learn-banner-details">Reach users of your project by following tags, answering newcomer questions, and 
+                        empowering experts in the community. <a href="">Read the curl project creator’s story.</a></p>
+                </div>
+                <div class="learn-banner">
+                    <img src="https://cdn.sstatic.net/Img/home/advocate.svg" />
+                    <p class="learn-banner-title">Acquire and share knowledge</p>
+                    <p class="learn-banner-details">Answer questions and <a href="">gain insights</a> from an audience of developers using 
+                        your technology on Stack Overflow.</p>
+                </div>
+                <div class="learn-banner">
+                    <img src="https://cdn.sstatic.net/Img/home/career-switcher.svg" />
+                    <p class="learn-banner-title">Find career opportunities</p>
+                    <p class="learn-banner-details">Create a profile that shows off your expertise and credentials to help you make your next move. 
+                        <a href="">Start your Developer Story.</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="jobs-container">
+            <div class="jobs-title">Looking for a job?</div>
+            <div class="jobs-banner-container">
+                <div class="jobs-banner">
+                    <img src="https://cdn.sstatic.net/Img/home/jobs-tech.svg" />
+                    <div class="jobs-banner-details">Browse jobs by technology</div>
+                </div>
+                <div class="jobs-banner">
+                    <img src="https://cdn.sstatic.net/Img/home/jobs-salary.svg" />
+                    <div class="jobs-banner-details">Browse jobs by salary</div>
+                </div>
+                <div class="jobs-banner">
+                    <img src="https://cdn.sstatic.net/Img/home/jobs-visa.svg" />
+                    <div class="jobs-banner-details">Browse jobs visa sponsorship</div>
+                </div>
+                <div class="jobs-banner">
+                    <img src="https://cdn.sstatic.net/Img/home/jobs-remote.svg" />
+                    <div class="jobs-banner-details">Browse remote- friendly jobs</div>
+                </div>
+                <div class="jobs-btn"><button type="button" value="view-jobs" id="view-jobs">View all jobs</button></div>
+            </div>
+            <div class="robot-image">
+                <img src="https://cdn.sstatic.net/Img/home/robot.svg" />
+            </div>
+           
+        </section>
+        <footer>
+            <div class="stack-logo">
+                <img src="images/footer-logo.png" />
+            </div>
+            <div class="footer-menu">
+                <a href=""><div class="footer-title"><h5>STACK OVERFLOW</h5></div></a>
+                <a href=""><p>Questions</p></a>
+                <a href=""><p>Jobs</p></a>
+                <a href=""><p>Developers Job Directory</p></a>
+                <a href=""><p>Salary calculator</p></a>
+                <a href=""><p>Help</p></a>
+                <a href=""><p>Mobile</p></a>
+                <a href=""><p>Disable Responsiveness</p></a>
+            </div>
+            <div class="footer-menu">
+                <a href=""><div class="footer-title"><h5>PRODUCTS</h5></div></a>
+                <a href=""><p>Teams</p></a>
+                <a href=""><p>Talent</p></a>
+                <a href=""><p>Advertising</p></a>
+                <a href=""><p>Enterprise</p></a>
+            </div>
+            <div class="footer-menu">
+                <a href=""><div class="footer-title"><h5>COMPANY</h5></div></a>
+                <a href=""><p>About</p></a>
+                <a href=""><p>Press</p></a>
+                <a href=""><p>Work Here</p></a>
+                <a href=""><p>Legal</p></a>
+                <a href=""><p>Private Policy</p></a>
+                <a href=""><p>Contact Us</p></a>
+            </div>
+            <div class="footer-menu">
+                <a href=""><div class="footer-title"><h5>STACK EXCHANGE NETWORK</h5></div></a>
+                <a href=""><p>Technology</p>
+                    <div class="GT-icon">&gt;</div>
+                </a>
+                <a href=""><p>Life / Arts</p>
+                    <div class="GT-icon">&gt;</div>
+                </a>
+                <a href=""><p>Culture /Recreation</p>
+                    <div class="GT-icon">&gt;</div>
+                </a>
+                <a href=""><p>Science</p>
+                    <div class="GT-icon">&gt;</div>
+                </a>
+                <a href=""><p>Other</p>
+                    <div class="GT-icon">&gt;</div>
+                </a>
+            </div>
+            <div class="socialmedia-copyright-container">
+                <div class="socialmedia-container">
+                    <a href="">Blog</a>
+                    <a href="">Facebook</a>
+                    <a href="">Twitter</a>
+                    <a href="">LinkedIn</a>
+                    <a href="">Instagram</a>
+                </div>
+                <div class="copyright-container">
+                    site design / logo © 2020 Stack Exchange Inc; user contributions licensed under 
+                    cc by-sa. rev 2020.9.24.37673
+                </div>
+            </div>
+            
+        </footer>
+    </body>
+</html>

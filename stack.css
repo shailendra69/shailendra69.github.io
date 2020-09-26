@@ -1,0 +1,1048 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+body {
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 47px;
+    background-color: #fafafb;
+    border-top: 3px solid rgb(255, 123, 0);
+    border-bottom: 1px solid darkgray;
+    box-shadow: 0px 1px 3px lightgray;
+    position: fixed;
+    padding: auto 50px auto 50px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 47px;
+    margin-left: 40px;
+    padding-left: 13px;
+}
+.menu:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.menu i {
+    font-size: 20px;
+    color: grey;
+    margin-right: 0;
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.logo:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.logo img {
+    background-color: transparent;
+    height: 45px;
+    margin: 0;
+}
+.logo a {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.logo-text {
+    vertical-align: middle;
+    font-size: 26px;
+    margin-right: 10px;
+    margin-left: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+}
+.about,
+.products,
+.teams {
+    height: 30px;
+    outline: none;
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    border-radius: 20px;
+    float: left;
+    text-align: center;
+    padding: 0 15px;
+    margin-right: 3px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.nav a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.about:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.9);
+    transition: 0.3s ease-in-out;
+}
+
+.products:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.9);
+    transition: 0.3s ease-in-out;
+}
+
+.teams:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.9);
+    transition: 0.3s ease-in-out;
+}
+.search-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 600px;
+    height: 20px;
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+#search1 {
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.2);
+}
+.search-container i {
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    margin-right: 5px;
+    margin-top: 0;
+}
+.login {
+    height: 32px;
+    font-size: 13px;
+    color: #39739d;
+    background-color: #e1ecf4;
+    border-radius: 3px;
+    border: 1px solid #7aa7c7;
+    outline: none;
+    margin: 2px;
+    margin-left: 15px;
+    margin-right: 5px;
+    padding: 0px 12px;
+}
+.login:hover {
+    background-color: #d1e5f1;
+}
+.signup {
+    height: 32px;
+    font-size: 13px;
+    color: #fff;
+    background-color: #0095ff;
+    border-radius: 3px;
+    border: 1px solid #7aa7c7;
+    outline: none;
+    margin: 0px;
+    padding: 0px 12px;
+}
+.signup:hover {
+    background-color: #0064bd;
+}
+
+.main-banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 540px;
+    background: url("https://cdn.sstatic.net/Img/home/illo-hero-full.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffcf10;
+}
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 70%;
+    height: 250px;
+    margin-top: 150px;
+    padding: 10px;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    font-size: 30px;
+    font-weight: 1200;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: rgba(0, 0, 0, 0.9);
+}
+.title h1 {
+    margin-bottom: 0;
+}
+.subtitle {
+    display: flex;
+    width: 45%;
+    font-size: 14px;
+    font-family: "source sans pro", sans-serif;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.9);
+    margin-top: 0;
+}
+.subtitle h2 {
+    font-weight: normal;
+}
+.font-mono {
+    font-family: monospace;
+}
+.category-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.developer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 45px;
+    color: rgb(255, 123, 0);
+    border: 0.3px solid rgb(255, 123, 0);
+    border-radius: 3px;
+    background-color: white;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.businesses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 45px;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(255, 123, 0);
+    font-size: 14px;
+}
+.category-container a {
+    text-decoration: none;
+}
+
+.main-container {
+}
+.for-developers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.developer-title {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 70px;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: rgba(0, 0, 0, 0.9);
+}
+.seperator {
+    display: flex;
+    width: 60px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #f48024;
+    margin-top: 30px;
+}
+.developer-details {
+    display: flex;
+    justify-content: center;
+    width: 39%;
+    margin-top: 10px;
+    font-size: 17px;
+    text-align: center;
+    font-family: "source sans pro", sans-serif;
+    color: rgba(0, 0, 0, 0.9);
+}
+.developer-details a {
+    text-decoration: none;
+    color: #f48024;
+}
+.banner-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: calc(28% - 100px);
+    height: 320px;
+    box-shadow: 0 0.5px 2px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1),
+        0 1.5px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    color: rgba(0, 0, 0, 0.9);
+}
+.banner:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.1),
+        0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.publicQA {
+    margin-top: 100px;
+    margin-right: 60px;
+}
+.privateQA {
+    margin-right: 60px;
+}
+.browse-jobs {
+    margin-top: 100px;
+}
+.banner img {
+    width: 120px;
+}
+
+.banner h3 {
+    margin: 0;
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.banner p {
+    padding: 10px;
+    margin: 0;
+    font-size: 13px;
+    font-weight: normal;
+}
+.banner button {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 40px;
+    background-color: #2b2d6e;
+    margin-top: 0;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 25px;
+}
+.banner #try-free {
+    background-color: #f48024;
+}
+.business-container {
+    background-color: #f7f6f9;
+}
+.for-business {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.business-title {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 120px;
+    font-size: 34px;
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.business-details {
+    display: flex;
+    justify-content: center;
+    width: 47%;
+    margin-top: 10px;
+    font-size: 17px;
+    text-align: center;
+    font-family: "source sans pro", sans-serif;
+    color: rgba(0, 0, 0, 0.9);
+}
+.developer-details a {
+    text-decoration: none;
+    color: #f48024;
+}
+.business-banner-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.business-banner {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: calc(33% - 100px);
+    height: 110px;
+    background-color: white;
+    box-shadow: 0 0.5px 2px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1),
+        0 1.5px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 50px;
+    margin-right: 0;
+    margin-bottom: 70px;
+    padding: 20px;
+}
+.business-banner img {
+    width: 80px;
+    margin-left: 20px;
+}
+
+.business-banner p {
+    width: 60%;
+    padding: 0px;
+    margin: 0;
+    margin-left: 15px;
+    font-size: 17px;
+    font-family: "source sans pro", sans-serif;
+    color: rgba(0, 0, 0, 0.9);
+}
+.business-banner a {
+    text-decoration: none;
+    color: #f48024;
+}
+
+.teams-container {
+    background-color: #2b2d6e;
+    color: white;
+}
+.for-teams {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+.teams-title {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin-top: 70px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: white;
+    text-align: center;
+}
+
+.teams-details {
+    display: flex;
+    justify-content: center;
+    width: 31%;
+    margin-top: 10px;
+    font-size: 17px;
+    text-align: center;
+    font-family: "source sans pro", sans-serif;
+    color: white;
+}
+.teams-details a {
+    text-decoration: none;
+    color: #f48024;
+}
+#learn-more-btn {
+    background-color: #f48024;
+    border: none;
+    width: 120px;
+    height: 50px;
+    border-radius: 3px;
+    color: #fff;
+}
+.teams-banner-container {
+    display: flex;
+    justify-content: center;
+    background-image: url("https://cdn.sstatic.net/Img/product/teams/illo-teams-pricing.svg");
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    background-position: center center;
+    font-family: "Source Sans Pro Bold", sans-serif;
+}
+.teams-banner {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: calc(25% - 100px);
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    padding: 25px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.teams-basic {
+    margin-right: 60px;
+}
+.teams-business {
+    margin-right: 60px;
+}
+.teams-enterprise {
+}
+
+.teams-banner-btn button {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 40px;
+    width: 100%;
+    background-color: #d6d9dc;
+    margin-top: 0;
+    color: #2f3337;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 25px;
+}
+.teams-banner-btn {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 1px solid black;
+    align-self: flex-end;
+}
+.teams-banner button:hover {
+    background-color: #379fef;
+    border: none;
+}
+
+.basic {
+    background-color: #c8ccd0;
+    color: #2f3337;
+    border-radius: 3px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    text-align: center;
+    width: 18%;
+    padding: 5px;
+}
+.basic-line1 {
+    color: #242729;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.basic-line2 {
+    color: #242729;
+    font-size: 28px;
+    margin: 0;
+}
+
+.basic-line3 {
+    color: #9199a1;
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.basic-line4,
+.basic-line6,
+.basic-line5 {
+    color: #242729;
+    font-size: 14px;
+    margin: 0;
+    line-height: 28px;
+}
+
+.basic-line4 i {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.basic-line5 i {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.basic-line6 i {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.teams-business {
+    background-color: #fafafb;
+}
+.Business {
+    background-color: #3c4146;
+    color: white;
+    border-radius: 3px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    text-align: center;
+    width: 30%;
+    padding: 5px;
+}
+
+.business-line1 {
+    color: #242729;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.business-line2 {
+    color: #242729;
+    font-size: 28px;
+    margin: 0;
+}
+
+.business-line3 {
+    color: #9199a1;
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.business-line4,
+.business-line5,
+.business-line6,
+.business-line7 {
+    color: #242729;
+    font-size: 14px;
+    margin: 0;
+    line-height: 28px;
+}
+
+.business-line8 {
+    color: #9199a1;
+    font-size: 12px;
+    margin: 0;
+    line-height: 28px;
+}
+
+.business-line4 i {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.business-line5 i {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.business-line6 i {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.business-line7 i {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.business-line8 i {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #9199a1;
+}
+
+.Enterprise {
+    background-color: #2b2d6e;
+    color: white;
+    border-radius: 3px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    text-align: center;
+    width: 34%;
+    padding: 5px;
+}
+
+.Enterprise-line1 {
+    color: #242729;
+    font-size: 14px;
+}
+.Enterprise-line2 {
+    color: #242729;
+    font-size: 28px;
+    margin: 0px;
+}
+.Enterprise-line3 {
+    color: #9199a1;
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.Enterprise-line4,
+.Enterprise-line5,
+.Enterprise-line6,
+.Enterprise-line7,
+.Enterprise-line8 {
+    color: #242729;
+    font-size: 14px;
+    margin: 0;
+    line-height: 28px;
+}
+
+.Enterprise-line4 i {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.Enterprise-line5 i {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.Enterprise-line6 i {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.Enterprise-line7 i {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.Enterprise-line8 i {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.teams-footer {
+    display: flex;
+
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #bbc0c4;
+    width: 100%;
+    padding-bottom: 120px;
+}
+.teams-footer a {
+    text-decoration: none;
+    color: #bbc0c4;
+}
+
+.teams-footer:hover {
+    color: white;
+}
+.teams-footer img {
+    margin-right: 10px;
+}
+.leader {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.users-love {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.innovative-companies {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hire-reach-container {
+    display: flex;
+    color: #242429;
+    background-color: #eff0f1;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.hire-container,
+.reach-container {
+    display: flex;
+    flex-direction: column;
+    width: 37%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.hire-logo img {
+    width: 80px;
+}
+
+.reach-logo img {
+    width: 80px;
+}
+.hire-title,
+.reach-title {
+    font-size: 26px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.hire-details,
+.reach-details {
+    font-size: 15px;
+    font-family: "source sans pro", sans-serif;
+}
+.hire-btn button,
+.reach-btn button {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 40px;
+    margin-top: 0;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 25px;
+    background-color: #f48024;
+}
+.question-answers-container {
+    display: flex;
+    flex-direction: column;
+    color: #242429;
+    background-color: #fff;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+.qa-title {
+    font-size: 34px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.animation-container {
+    display: flex;
+    color: #242429;
+    background-color: #fff;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+.animate-left,
+.animate-right {
+    display: flex;
+    justify-content: left;
+    width: 230px;
+    padding-right: 0;
+    margin-bottom: 20px;
+}
+.arrow {
+    margin-right: -7px;
+}
+.left-animation img {
+    width: 50px;
+}
+
+.right-animation img {
+    width: 50px;
+}
+
+.middle-animation img {
+    width: 500px;
+}
+.qa-details {
+    font-size: 15px;
+    font-family: "source sans pro", sans-serif;
+}
+.create-account-btn button {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 40px;
+    margin-top: 0;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 25px;
+    background-color: #f48024;
+}
+.learn-grow-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.learn-grow-title {
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+.learn-banner-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+.learn-banner {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.learn-banner img {
+    width: 180px;
+}
+.learn-banner-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.learn-banner-details {
+    margin-top: 10px;
+    font-family: "source sans pro", sans-serif;
+    font-size: 15px;
+}
+
+.jobs-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #e1ecf4;
+}
+.jobs-title {
+    display: flex;
+
+    font-size: 34px;
+    font-weight: bold;
+}
+.jobs-banner-container {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+.jobs-banner {
+    display: flex;
+    margin-right: 30px;
+    width: 200px;
+    height: 50px;
+    padding: 20px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0.5px 2px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1),
+        0 1.5px 6px rgba(0, 0, 0, 0.2);
+}
+.jobs-banner img {
+    width: 40px;
+    margin-right: 20px;
+}
+.jobs-btn button {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 40px;
+    margin-top: 0;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 25px;
+    background-color: #f48024;
+}
+.robot-image {
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+    margin-top: 60px;
+    align-self: flex-end;
+}
+.robot-image img {
+    width: 60px;
+    float: right;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 32px 12px 12px 12px;
+    background-color: #242729;
+    color: #6a737c;
+}
+.stack-logo img {
+    width: 70px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 15%;
+}
+.footer-menu p {
+    font-family: "source sans pro", serif;
+    color: #6a737c;
+    font-size: 14px;
+    margin: 0;
+}
+.footer-menu a {
+    color: #c7cbce;
+    text-decoration: none;
+    margin: 0;
+}
+.footer-menu a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.GT-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 3px;
+    font-size: 8px;
+}
+
+.socialmedia-copyright-container {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+}
+
+.socialmedia-container {
+    display: flex;
+    width: 25%;
+}
+.socialmedia-container a {
+    color: #6a737c;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.copyright-container {
+    display: flex;
+    align-self: flex-end;
+    font-size: 14px;
+}
+© 2020 GitHub, Inc.
