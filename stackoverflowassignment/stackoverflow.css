@@ -847,6 +847,53 @@ a {
 	padding-bottom: 130px;
 }
 
+.teams-footer {
+
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	color: #bbc0c4;
+	width: 100%;
+	
+	padding-top: 70px;
+}
+
+.teams-footer a {
+	text-decoration: none;
+	color: #bbc0c4;
+}
+.leader {
+
+	display: flex;
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.users-love {
+
+	display: flex;
+	padding: 20px;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+.innovative-companies {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.teams-footer:hover {
+
+	color: white;
+}
+
 .looking-text {
 
 	font-family: 'Roboto Slab Bold' ,serif;
@@ -863,6 +910,10 @@ a {
 	max-width: 210px;
 	background-color: white;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.06),0 2px 6px rgba(0,0,0,0.06),0 3px 8px rgba(0,0,0,0.09);
+}
+
+.teams-footer img {
+	margin-right: 10px;
 }
 
 .looking-block1 {
@@ -950,7 +1001,39 @@ a {
     width: 230px;
     padding-right: 0;
     margin-bottom: 20px;
+    
 }
+
+.animate-left:hover {
+    
+    box-shadow: 0 1px 4px rgba(0,0,0,0.09),0 3px 8px rgba(0,0,0,0.09),0 4px 13px rgba(0,0,0,0.13);	
+}
+
+.animate-right:hover {
+    
+    box-shadow: 0 1px 4px rgba(0,0,0,0.09),0 3px 8px rgba(0,0,0,0.09),0 4px 13px rgba(0,0,0,0.13);	
+}
+
+.left-animation-p {
+
+	font-family: sans-serif;
+	padding-left: 10px;
+}
+
+.left-animation :hover {
+
+	height: 60px;
+	cursor: pointer;
+}
+
+.right-animation :hover {
+
+	cursor: pointer;
+	height: 60px;
+	
+}
+
+ 
 .arrow {
     margin-right: -7px;
 }
@@ -964,6 +1047,31 @@ a {
 
 .middle-animation img {
     width: 500px;
+}
+
+.ask-question {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    opacity: 0.9;
+}
+.qa-details {
+    font-size: 15px;
+    font-family: "source sans pro", sans-serif;
+}
+.create-account-btn button {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 42px;
+    margin-left: 580px;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 25px;
+    background-color: #f48024;
 }
 
 .robot-image {
@@ -1303,20 +1411,31 @@ a {
  		width: 75%;
  		margin-left: auto;
  		margin-right: auto;
+ 		margin-top: auto;
+ 		margin-bottom: auto;
  	}
 
  	.box3 {
-        display: none;
+        
  		width: 75%;
  		margin-left: auto;
  		margin-right: auto;
+ 		margin-top: auto;
+ 		margin-bottom: auto;
  	}
 
  	.box2 {
-        display: none;
+        
  		width: 75%;
  		margin-left: auto;
  		margin-right: auto;
+ 		margin-top: 20px;
+ 		margin-bottom: auto;
+ 	}
+
+ 	.get {
+ 		width: 103%;
+ 		margin-top: 35px;
  	}
 
  	.privat {
@@ -1378,4 +1497,13 @@ a {
  		padding-right: 0;
  		width: 100%;
  	}
+    .teams-footer {
+
+        flex-direction: column;
+ 		background-image: none;
+ 		padding-left: 0;
+ 		padding-right: 0;
+ 		width: 100%;	
+    }
+
  }

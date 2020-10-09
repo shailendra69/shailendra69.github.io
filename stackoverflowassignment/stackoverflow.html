@@ -7,6 +7,29 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <meta content="width=device-width, initial-scale=1" name="viewport" />  
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+
+  <!--  <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded",function (event) {
+            document
+              .getElementByID("animate-left")
+              .addEventListener("click", function clickMethod(event) {
+                event.preventDefault();
+                var newImage = event.target.getAttribute("img");
+                console.log(newImage);
+                if (newImage != null) {
+                    document
+                    .getElementByID("displayImage")
+                    .setAtribute("src",newImage);
+                }
+              });
+        });
+
+        function testUlclick() {
+            alert("testUlclick");
+        }
+
+    </script>
+-->
 </head>
 <body>
       <header>
@@ -287,13 +310,16 @@
                         </div>
                     </div>
                 </div>
-        						<div class="leader">
-        							<a href="#" class="leader2">
-        								<img src="https://cdn.sstatic.net/Img/product/teams/endorsements/g2.svg?v=670bf9279910" class="leader1">
-        								<strong class="bold"> Leader</strong>
-        							Summer 2020 </a>
-        							</a>
-        						</div>
+        						 <div class="teams-footer">
+                <a href=""> <div class="leader"><img src="https://cdn.sstatic.net/Img/product/teams/endorsements/g2.svg"/> 
+                    <strong>Leader</strong> Summer 2020 </div></a>
+                    <a href=""><div class="users-love"> <img src="https://cdn.sstatic.net/Img/product/teams/endorsements/g2.svg"/> 
+                    <strong>Users love Us</strong>  </div></a>
+                    <a href=""><div class="innovative-companies">
+                     <img src="https://cdn.sstatic.net/Img/product/teams/endorsements/fastco.svg"/> 
+                        <strong>Most Innovative Companies</strong> 2019 
+                </div></a>
+            </div>
         					</div>
         				</div>
         			</div>
@@ -340,18 +366,18 @@
         					<div></div>
         					<div class="animation-container">
                 <div class="left-animation">
-                    <div class="animate-left">
+                    <div class="animate-left" id="animate-left">
                         <img src="https://cdn.sstatic.net/Img/home/ask-a-question.svg" />
-                        <p>Ask a question</p>
-                        <p class="arrow">&gt;</p>
+                        <p class="left-animation-p" onclick="animate-left">Ask a question</p>
+                        
                     </div>
-                    <div class="animat-left">
+                    <div class="animate-left" id="animate-left">
                         <img src="https://cdn.sstatic.net/Img/home/votes.svg" />
-                        <p>Vote on everything</p>
+                        <p class="left-animation-p">Vote on everything</p>
                     </div>
-                    <div class="animate-left">
+                    <div class="animate-left" id="animate-left">
                         <img src="https://cdn.sstatic.net/Img/home/answer.svg" />
-                        <p>Answer questions</p>
+                        <p class="left-animation-p">Answer questions</p>
                     </div>
                 </div>
                 <div class="middle-animation">
@@ -360,7 +386,7 @@
                 <div class="right-animation">
                     <div class="animate-right">
                         <img src="https://cdn.sstatic.net/Img/home/tags.svg" />
-                        <p>Tag your question</p>
+                        <p class="left-animation-p">Tag your question</p>
                     </div>
                     <div class="animate-right">
                         <img src="https://cdn.sstatic.net/Img/home/accept.svg" />
@@ -368,11 +394,16 @@
                     </div>
                     <div class="animate-right">
                         <img src="https://cdn.sstatic.net/Img/home/get-recognized.svg" />
-                        <p>Get recognized</p>
+                        <p class="left-animation-p">Get recognized</p>
                     </div>
                 </div>
+            
+        		 </div>
+            <div class="ask-question">Ask a question publicly on 170+ Stack Exchange sites or 
+                privately using Stack Overflow for Teams.</div>
+            <div class="create-account-btn">
+                <button type="button" value="account" id="account">Create an account</button>
             </div>
-        		
         		
         		<div class="footer-side">
         			<h3 class="footer-text">

@@ -1,16 +1,51 @@
+
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <button id="button" onclick="detail()">
+     CHECK
+    </button>
+    <script>
+      function detail() {
+        var names = [
+          {
+            name: "yash",
+            age: 12,
+            profession: "student",
+          },
 
-<h2>JavaScript Display Object Properties</h2>
-
-<p id="demo"></p>
-
-<script>
-var person = {name:"Shailendra", age:20, city:"Jaipur"};
-
-document.getElementById("demo").innerHTML = person.name + "," + person.age + "," + person.city;
-</script>
-
-</body>
+          {
+            name: "Naitik",
+            age: 11,
+            profession: "Student",
+          },
+          
+          {
+            name: "Rakesh", 
+            age: 38,
+            profession: Software engineer
+          },
+        ];
+        var i;
+        var j;
+        for (i = 0; i <= names.length - 1; i++) {
+          document.write("<br>");
+          document.write(
+            "  Name: " + names[i].name,
+            "<br>",
+            "  Age: " + names[i].age,
+            "<br>",
+            "  Profession: " + names[i].profession,
+            "<br>"
+          );
+        }
+      }
+    </script>
+    
+  </body>
 </html>

@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: cadetblue;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -66px;
+}
+
+.links li {
+  list-style: none;
+  padding: 15px;
+  width: 100%;
+  height: 12px;
+  margin-top: 25px;
+  background-color: brown;
+  text-align: center;
+}
+.links li:hover {
+  background-color: black;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+#class {
+  padding-top: 20px;
+}
