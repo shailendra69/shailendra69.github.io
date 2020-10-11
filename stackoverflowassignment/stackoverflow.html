@@ -8,28 +8,22 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />  
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
 
-  <!--  <script type="text/javascript">
-        document.addEventListener("DOMContentLoaded",function (event) {
-            document
-              .getElementByID("animate-left")
-              .addEventListener("click", function clickMethod(event) {
-                event.preventDefault();
-                var newImage = event.target.getAttribute("img");
-                console.log(newImage);
-                if (newImage != null) {
-                    document
-                    .getElementByID("displayImage")
-                    .setAtribute("src",newImage);
-                }
-              });
-        });
-
-        function testUlclick() {
-            alert("testUlclick");
-        }
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(event){
+                document.getElementById("leftParentElement")
+                .addEventListener("click", function clickMethod(event){
+                    var newImage=event.target.getAttribute("img");
+                    document.getElementById("displayImage").setAttribute("src", newImage);
+                });
+                document.getElementById("rightParentElement")
+                .addEventListener("click", function clickMethod(event){
+                    var newImage=event.target.getAttribute("img");
+                    document.getElementById("displayImage").setAttribute("src", newImage);
+                });
+            });
 
     </script>
--->
+
 </head>
 <body>
       <header>
@@ -364,39 +358,44 @@
         						Questions are everywhere, answers are on Stack Overflow
         					</h3>
         					<div></div>
-        					<div class="animation-container">
-                <div class="left-animation">
-                    <div class="animate-left" id="animate-left">
+        					
+            <div class="animation-container">
+                <div class="left-animation" id="leftParentElement">
+                    <div class="animate-left ask" img="https://cdn.sstatic.net/Img/home/illo-feats-ask.svg">
                         <img src="https://cdn.sstatic.net/Img/home/ask-a-question.svg" />
-                        <p class="left-animation-p" onclick="animate-left">Ask a question</p>
+                        <p>Ask a question</p>
                         
                     </div>
-                    <div class="animate-left" id="animate-left">
+                    <div class="animate-left vote" img="https://cdn.sstatic.net/Img/home/illo-feats-vote.svg">
+
                         <img src="https://cdn.sstatic.net/Img/home/votes.svg" />
-                        <p class="left-animation-p">Vote on everything</p>
+                        <p>Vote on everything</p>
+                        
                     </div>
-                    <div class="animate-left" id="animate-left">
+                    <div class="animate-left answer" img="https://cdn.sstatic.net/Img/home/illo-feats-answer.svg">
                         <img src="https://cdn.sstatic.net/Img/home/answer.svg" />
-                        <p class="left-animation-p">Answer questions</p>
+                        <p>Answer questions</p>
                     </div>
                 </div>
                 <div class="middle-animation">
-                    <img src="https://cdn.sstatic.net/Img/home/illo-feats-ask.svg" />
+                    <img src="https://cdn.sstatic.net/Img/home/illo-feats-ask.svg" id="displayImage" class="ask-img"/>
+                    
                 </div>
-                <div class="right-animation">
-                    <div class="animate-right">
+                <div class="right-animation"  id="rightParentElement">
+                    <div class="animate-right  tags" img="https://cdn.sstatic.net/Img/home/illo-feats-tags.svg">
                         <img src="https://cdn.sstatic.net/Img/home/tags.svg" />
-                        <p class="left-animation-p">Tag your question</p>
+                        <p>Tag your question</p>
                     </div>
-                    <div class="animate-right">
+                    <div class="animate-right accept" img="https://cdn.sstatic.net/Img/home/illo-feats-accept.svg">
                         <img src="https://cdn.sstatic.net/Img/home/accept.svg" />
                         <p>Accept an answer</p>
                     </div>
-                    <div class="animate-right">
+                    <div class="animate-right recognize" img="https://cdn.sstatic.net/Img/home/illo-feats-recognize.svg">
                         <img src="https://cdn.sstatic.net/Img/home/get-recognized.svg" />
-                        <p class="left-animation-p">Get recognized</p>
+                        <p>Get recognized</p>
                     </div>
                 </div>
+            </div>
             
         		 </div>
             <div class="ask-question">Ask a question publicly on 170+ Stack Exchange sites or 
