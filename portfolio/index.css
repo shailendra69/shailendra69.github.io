@@ -1,0 +1,251 @@
+* {
+
+	margin: 0;
+	padding: 0;
+
+}
+
+#home {
+
+	background-image: url("https://static.pexels.com/photos/232/apple-iphone-books-desk-large.jpg") ;
+    
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.overlay {
+
+	background-color: rgba(4, 14, 22, 0.8);
+	height: 100%;
+	width: 100%;
+	padding-bottom: 80px;
+}
+
+#home nav {
+
+	margin: 0 auto;
+
+	width: 800px;
+	padding-top: 80px;
+}
+
+#home nav ul {
+
+	display: flex;
+	overflow: hidden;
+}
+
+#home nav ul li {
+
+	width: 25%;
+	list-style: none;
+}
+
+#home nav a {
+
+	padding: 16px;
+	padding-right: 30px;
+	display: table-cell;
+	font-size: 21px;
+	font-family: cursive;
+	color: white;
+	text-decoration: none;
+}
+
+.container {
+
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h1 {
+
+	color: white;
+	text-align: center;
+	margin-top: 4%;
+	font-size: 412%;
+}
+
+h1 .logo {
+
+	font-size: 230%;
+	font-family: cursive, 'Brush Script MT';
+	width: 200px;
+	margin-left: -20px;
+}
+h1 > small {
+
+	display: block;
+	color: white;
+}
+
+.social-links {
+
+	overflow: hidden;
+	padding: 0;
+	display: table;
+	margin: 0 auto;
+	margin-top: 90px;
+}
+
+.social-links li {
+
+    display: inline-table;
+    margin-right: 10px;
+    list-style: none;
+
+}
+
+.fb {
+
+	border-color: #55acee;
+	display: block;
+	background-color: black;
+	padding: 18px;
+	border: 3px solid #55acee;
+	font-size: 20px;
+
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+li .fb:hover {
+
+	background-color: #55acee;
+}
+
+.ig {
+
+	border-color: #0077b5;
+	display: block;
+	background-color: black;
+	padding: 18px;
+	border: 3px solid #0077b5;
+	font-size: 20px;
+}
+
+li .ig:hover {
+
+	background-color:#0077b5; 
+}
+
+.fcc {
+
+	border-color: #4a2b0f;
+	display: block;
+	background-color: black;
+	padding: 18px;
+	border: 3px solid #4a2b0f;
+	font-size: 20px;
+}
+
+li .fcc:hover {
+
+	background-color:#4a2b0f; 
+}
+
+.main-container {
+
+	background-color: black;
+	height: 400px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.about {
+
+	padding-top: 50px;
+}
+
+.row {
+
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.center-text {
+
+	color: #164f5a;
+	text-align: center;
+}
+
+h2 {
+
+	font-family: Tahoma, 'Open Sans';
+}
+
+.image img {
+
+	height: 310px;
+	width: 310px;
+	border-radius: 50%;
+	margin-left: 5%;
+	margin-top: -12%;
+}
+
+
+.title-text {
+
+	color: #164f5a;
+	text-align: center;
+}
+
+.lead {
+
+	margin-bottom: 20px;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 65px;
+	margin-left: 26%;
+	color: white;
+	font-weight: 300;
+	line-height: 1.4;
+}
+
+#certificate {
+
+	background-color: #423a3a;
+	margin-top: 30px;
+	padding-bottom: 80px;
+}
+
+#certificate::before {
+
+	display: table;
+	content: "";
+}
+
+#certificate h2 {
+
+	color: #F0F0F0;
+	margin-bottom: 140px;
+	font-size: 40px;
+	margin-top: 80px;
+}
+
+#certificate h2:after {
+
+	border-bottom: 2px dashed #b4b4b4;
+}
+
+h2:after {
+
+	display: block;
+	margin: 42px 0;
+	content: "";
+}
+
+@media (min-width: 600px) {
+
+ .container {
+
+ 	width: 1170px;
+ }
