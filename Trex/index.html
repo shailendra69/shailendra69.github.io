@@ -1,0 +1,92 @@
+  
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>T-Rex Game</title>
+        <script src="script.js" ></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+
+        <style>
+            .container{
+                position: relative;
+                width: 80%;
+                height:500px;
+                margin:auto;
+                border-bottom: 1px solid black;
+            }
+
+            #dinoo img{
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                
+                bottom: 0;
+            }
+
+            #cactuss img{
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                background-color: red;
+                bottom: 0;
+                left:1000px;
+            }
+
+            #score{
+                position: absolute;
+                width: 100px;
+                height: 50px;
+                text-align: center;
+                color: white;
+                background-color: black;
+                right:150px;
+                
+            }
+
+            #gameStart{
+                display: block;
+                text-align: center;
+                cursor: pointer;
+                position: absolute;
+                width: 100px;
+                height: 50px;
+                text-align: center;
+                color: white;
+                background-color: green;
+                left:400px;
+                
+            }
+
+            #gameEnd{
+                
+                display: none;
+                text-align: center;
+                cursor: pointer;
+                position: absolute;
+                width: 100px;
+                height: 50px;
+                text-align: center;
+                color: white;
+                background-color: red;
+                left:150px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="gameStart">START</div>
+            <div id="gameEnd">Game Over</div>
+            <div id="score">0000</div>
+            
+            <div id="dinoo">
+            	<img src="trex.png" id="dino">
+            </div>
+            <div id="cactuss">
+            	<img src="cactus.jpg" id="cactus">
+            </div>
+        </div>
+    </body>
+</html>
