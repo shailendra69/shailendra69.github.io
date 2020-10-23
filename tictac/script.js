@@ -1,91 +1,68 @@
-const ticTacToeGame = new TicTacToeGame();
-ticTacToeGame.start();
-
-function TicTacToeGame() {
-	const board = new Board();
-	const humanPlayer = new HumanPlayer(board);
-	const computerPlayer = new ComputerPlayer(board);
-	let turn = 0;
-
-	this.start = function() {
-		const config = { childList: true};
-		const observer = new MutationObserver(() => takeTurn());
-		board.position.forEach((el)) => observer.observer(el, config));
-        takeTurn();
-
-	}
-
-function takeTurn() {
-	if (board.checkForWinner()) {
-		return;
-	}
-
-	if (turn % 2 === 0) {
-		humanPlayer.takeTurn();
-	} else {
-		computerPlayer.takeTurn();
-	}
-
-	turn++;
- } 
-}
-
-function Board() {
-	this.position = Array.form(document.querySelectorAll('.col'));
-	console.log(this.positions);
-
-	this.checkForWinner = function() {
-	let winner = false;
-	const winningCombinations = [
-      [0, 1, 2],
-      [3, 4, 5],
-      [6, 7, 8],
-      [0, 4, 8],
-      [2, 4, 6],
-      [0, 3, 6],
-      [1, 4, 7],
-      [2, 5, 8]
-	]; 
-
-	const positions = this.positions;
-
-	winningCombinations.forEach((winningCombinations) => {
-		const pos0InnerText = positions[winningCombo[0]].innerText;
-		const pos1InnerText = positions[winningCombo[1]].innerText;
-		const pos2InnerText = positions[winningCombo[2]].innerText;
-		const isWinningCombo = pos0InnerText !== '' &&
-		pos0InnerText === pos1InnerText &&
-		pos1InnerText === pos2InnerText;
-
-		if (isWinningCombo) {
-			winner = true;
-			winningCombo.forEach((index) => {
-				positions[index].className += 'winner';
-			})
-		}
-	});
-
-	return winner;
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("game").addEventListener("click", startGame);
+  const winningTypes = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [2, 4, 6],
+    [0, 4, 8],
+    [6, 4, 8],
+  ];
+  fillingState = ["", "", "", "", "", "", "", "", ""];
+  let whoIsWinner = "";
+  var currentPlayer = "X";
+  function startGame(event) {
+    secondPlayer();
+    function secondPlayer() {
+      if (event.target.innerHTML != "" || whoIsWinner != "") {
+        return;
+      }
+      currentPlayer = currentPlayer === "X" ? "O" : "X";
+      event.target.innerHTML = currentPlayer;
+    }
+    let writtenValue = event.target.innerHTML;
+    let writtenPosition = event.target.getAttribute("id");
+    fillingState[writtenPosition] = writtenValue;
+    Whowin();
   }
-}
-function HumanPlayer(board) {
-	this.takeTurn = function() {
-		board.positions.forEach(el => el.addEventListener('click', handleTurnTaken));
-	}
 
-}
+  function Whowin() {
+    let writtenClicked = writtenclicked();
+    if (writtenClicked > 4) {
+      console.log("writtenClicked" + writtenClicked);
+      winner();
+    }
+  }
+  function writtenclicked() {
+    let boxFilled = fillingState.filter((element) => {
+      element.trim();
+      return element != "";
+    });
+    console.log("boxFilled " + boxFilled);
+    return boxFilled.length;
+  }
 
-function handleTurnTaken(event) {
-	event.terget.innerText = 'X';
-	board.positions
-	.forEach(el => el.removeEventListener('click', handleTurnTaken));
-}
-
-function ComputerPlayer(board) {
-	this.takeTurn = function() {
-		const availablePositiuons = board.positions.filter((p) => p.innerText === '');
-		const move = Math.floor(Math.random() * availablePositiuons.length);
-		availablePositiuons[move].innerText = '0';
-	}
-
-}
+  function winner() {
+    console.log("winner method");
+    for (i = 0; i < winningTypes.length - 1; i++) {
+      let element = winningTypes[i];
+      let a = fillingState[element[0]];
+      let b = fillingState[element[1]];
+      let c = fillingState[element[2]];
+      console.log("pri9ntingabc");
+      console.log("a:" + a + "b:" + b + "c:" + c);
+      if (a === "" || b === "" || c === "") {
+        continue;
+      }
+      if (a === b && b === c) {
+        whoIsWinner = a;
+        document.getElementById("end").innerHTML =
+          whoIsWinner + " has won the game";
+        break;
+      }
+    }
+  }
+});

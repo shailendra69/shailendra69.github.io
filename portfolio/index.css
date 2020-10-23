@@ -243,6 +243,29 @@ h2:after {
 	content: "";
 }
 
+.certificate-heading {
+
+	color: white;
+	font-size: 30px;
+	width: 50%;
+	height: 500px;
+	font-family: cursive;
+	background-color: black;
+
+}
+
+.certificate-heading:hover {
+
+	background: url(logo.jpg) no-repeat;
+	height: 500px;
+	width: 100%;
+}
+
+.image-container {
+	margin-left: 10px;
+
+}
+
 @media (min-width: 600px) {
 
  .container {
