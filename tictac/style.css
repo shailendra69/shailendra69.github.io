@@ -1,13 +1,11 @@
 body {
 
   margin: 0px;
-  font-family: "Roboto", sans-serif;
-
 }
 
 .background {
 
-  height: 781px;
+  height: 700px;
   width: 100%;
   background-color: coral;
   
@@ -39,7 +37,7 @@ body {
 
 .game div:hover {
 
-  background-color: rgb(26, 25, 25);
+  background-color: red;
 
 }
 

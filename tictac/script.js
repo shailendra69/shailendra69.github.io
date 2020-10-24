@@ -23,20 +23,20 @@ document.addEventListener("DOMContentLoaded", function () {
       currentPlayer = currentPlayer === "X" ? "O" : "X";
       event.target.innerHTML = currentPlayer;
     }
-    let writtenValue = event.target.innerHTML;
-    let writtenPosition = event.target.getAttribute("id");
-    fillingState[writtenPosition] = writtenValue;
+    let textValue = event.target.innerHTML;
+    let textPosition = event.target.getAttribute("id");
+    fillingState[textPosition] = textValue;
     Whowin();
   }
 
   function Whowin() {
-    let writtenClicked = writtenclicked();
-    if (writtenClicked > 4) {
-      console.log("writtenClicked" + writtenClicked);
+    let textClicked = textclicked();
+    if (textClicked > 4) {
+      console.log("textClicked" + textClicked);
       winner();
     }
   }
-  function writtenclicked() {
+  function textclicked() {
     let boxFilled = fillingState.filter((element) => {
       element.trim();
       return element != "";
