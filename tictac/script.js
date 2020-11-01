@@ -1,4 +1,7 @@
+// it prevent browser from reading event listener before page is loaded
 document.addEventListener("DOMContentLoaded", function () {
+ 
+// set an onclick method on each block using event listener
   document.getElementById("game").addEventListener("click", startGame);
   const winningTypes = [
     [0, 1, 2],
@@ -11,11 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
     [0, 4, 8],
     [6, 4, 8],
   ];
+  // array on which value is filled after click of each box
   fillingState = ["", "", "", "", "", "", "", "", ""];
   let whoIsWinner = "";
   var currentPlayer = "X";
+
+// function to start game
   function startGame(event) {
     secondPlayer();
+    // it print value X or O on blocks
     function secondPlayer() {
       if (event.target.innerHTML != "" || whoIsWinner != "") {
         return;
@@ -23,11 +30,17 @@ document.addEventListener("DOMContentLoaded", function () {
       currentPlayer = currentPlayer === "X" ? "O" : "X";
       event.target.innerHTML = currentPlayer;
     }
-    let textValue = event.target.innerHTML;
+    
+    // get value filled inside the block and position of the block
+    // let blockvalue = event.target.innerHTML;
     let textPosition = event.target.getAttribute("id");
-    fillingState[textPosition] = textValue;
+    
+    // fill value of block on array 
+    fillingState[textPosition] = currentPlayer;
     Whowin();
   }
+
+  // function to check winning condiion
 
   function Whowin() {
     let textClicked = textclicked();

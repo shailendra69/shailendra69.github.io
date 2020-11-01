@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>scope</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		let x =10; //global variable
+
+	//	if (x == 10) {
+	//		let x =5; //block level scope
+	//		let y = 3;
+	//		{
+	//			console.log("inner y: " + y ); 
+	//		}
+
+	//		console.log
+	//	}
+	const arr1 = [1, 2, 3];
+    const arr2 = arr1.map(function(item) {
+     return item * 2;
+  });
+
+   console.log(arr2);
+	</script>
+
+</body>
+</html>
