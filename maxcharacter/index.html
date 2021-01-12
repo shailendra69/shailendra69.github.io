@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <title>Max character</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>Enter the string</h1>
+    <input id="String" />
+    <button onclick="answer()">Click here</button>
+    <p id="solution"></p>
+
+ <script type="text/javascript">
+
+      function answer() {
+        var enteredString = document.getElementById("String").value;
+
+        var str = enteredString.toString().toLowerCase();
+        var strSinglevalue = [];
+        var charCount = 0;
+        var maxOccurnigvalueacter;
+        var charCountArray = {};
+
+        for (i = 0; i < str.length; i++) {
+          if (strSinglevalue.includes(str[i]) == false) {
+            strSinglevalue.push(str[i]);
+            charCountArray[str[i]] = 1;
+          } else {
+            charCountArray[str[i]] += 1;
+          }
+
+          if (charCountArray[str[i]] > charCount) {
+            charCount = charCountArray[str[i]];
+            maxOccurnigvalueacter = str[i];
+          }
+        }
+        document.getElementById("solution").innerHTML ="";
+        document.getElementById("solution").innerHTML +=
+          "<h3>Entered string is : " + str + "</h3>";
+        document.getElementById("solution").innerHTML +=
+          "<h3>Maximum occuring character in this string is : " +
+          maxOccurnigvalueacter +
+          "</h3>";
+        document.getElementById("solution").innerHTML +=
+          "<h3>Number of time " +
+          maxOccurnigvalueacter +
+          " occur is : " +
+          charCount +
+          "</h3>";
+      }
+   </script>
+ </body>
+ </html>
