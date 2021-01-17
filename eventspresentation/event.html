@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title> Presentation on events</title>
+</head>
+<body>
+	<div class="parentdiv" id="parentId">
+		<div class="childdiv" id="childId">
+
+			
+				</div>
+			</div>
+			<div class="click">
+            <a href="event.png"> click here</a> 
+          </div>
+	<script type="text/javascript">
+		
+        const parentId = document.getElementById('parentId');
+        const childId = document.getElementById('childId');
+
+		const parentCall = () => {
+			alert('Parent Div Call');
+			console.log('Parent Div Call')
+		}
+
+		const childCall = () => {
+			alert('Child Div Call');
+			console.log('Parent Div Call');
+			//event.stopPropagation();
+			// method use for stoping propagation//
+		}
+
+		parentId.addEventListener('click', parentCall, true);
+		childId.addEventListener('click', childCall, true);
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title> Presentation on events</title>
+</head>
+<body>
+	<div class="parentdiv" onclick="parentCall()">
+		<div class="childdiv" onclick="childCall()">
+			
+				</div>
+			</div>
+
+	<script type="text/javascript">
+		
+		const parentCall = () => {
+			alert('Parent Div Call');
+			console.log('Parent Div Call')
+		}
+
+		const childCall = () => {
+			alert('Child Div Call');
+			console.log('Parent Div Call');
+			//event.stopPropagation();
+			// method use for stoping propagation//
+		}
+	</script>
+
+</body>
+</html>
